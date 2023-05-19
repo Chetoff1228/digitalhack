@@ -11,6 +11,8 @@ numpy = "^1.24.3"
 pandas = "^2.0.1"
 torch = "^2.0.1"
 transformers = "^4.29.2"
+psycopg2 = "^2.9.6"
+config = "^0.5.1"
 
 
 [tool.poetry.group.dev.dependencies]
