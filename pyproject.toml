@@ -16,6 +16,12 @@ config = "^0.5.1"
 flask = "^2.3.2"
 flask-restful = "^0.3.9"
 fastapi = "^0.95.2"
+spacy = "^3.5.3"
+sqlalchemy = "^2.0.15"
+scikit-learn = "^1.2.2"
+folium = "^0.14.0"
+openpyxl = "^3.1.2"
+suntime = "^1.2.5"
 
 
 [tool.poetry.group.dev.dependencies]

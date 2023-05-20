@@ -1,0 +1,3099 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_70cc7b3e43d63d0ff821e583753b223d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_70cc7b3e43d63d0ff821e583753b223d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_70cc7b3e43d63d0ff821e583753b223d = L.map(
+                "map_70cc7b3e43d63d0ff821e583753b223d",
+                {
+                    center: [55.751244, 37.618423],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_27087e14e84b2f861542221e44bc7b6e = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+            var marker_23a5d496fe13db788783e962bab315b6 = L.marker(
+                [68.953178, 33.107052],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_47a1bada1b8bd27b3e015c3559aaec99 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2591b62ea9ae3034338391879abf4dce = $(`<div id="html_2591b62ea9ae3034338391879abf4dce" style="width: 100.0%; height: 100.0%;">Мурманская область</div>`)[0];
+                popup_47a1bada1b8bd27b3e015c3559aaec99.setContent(html_2591b62ea9ae3034338391879abf4dce);
+            
+        
+
+        marker_23a5d496fe13db788783e962bab315b6.bindPopup(popup_47a1bada1b8bd27b3e015c3559aaec99)
+        ;
+
+        
+    
+    
+        var popup_98a95ab7817dc5578dce40fe11db20e1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bd4a8911095342e30959808738a1a930 = $(`<div id="html_bd4a8911095342e30959808738a1a930" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Василек Посевной', 'Дудник Лекарственный', 'Зюзник Европейский', 'Пион Уклоняющийся', 'Подорожник Большой', 'Родиола Розовая', 'Ромашка Безъязычковая', 'Синюха Голубая', 'Тимьян Ползучий']<br>             <b>Region:</b> Мурманская область         </div>         </div>`)[0];
+                popup_98a95ab7817dc5578dce40fe11db20e1.setContent(html_bd4a8911095342e30959808738a1a930);
+            
+        
+
+        marker_23a5d496fe13db788783e962bab315b6.bindPopup(popup_98a95ab7817dc5578dce40fe11db20e1)
+        ;
+
+        
+    
+    
+            var marker_7abb812b4e20cc6d7cd313eb8d55c12c = L.marker(
+                [66.530937, 66.602432],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_bd3e9c2e56ad243b4be012991d2ebfb9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2b2e528a79c36d15d0c68ba695cf218c = $(`<div id="html_2b2e528a79c36d15d0c68ba695cf218c" style="width: 100.0%; height: 100.0%;">Ненецкий автономный округ</div>`)[0];
+                popup_bd3e9c2e56ad243b4be012991d2ebfb9.setContent(html_2b2e528a79c36d15d0c68ba695cf218c);
+            
+        
+
+        marker_7abb812b4e20cc6d7cd313eb8d55c12c.bindPopup(popup_bd3e9c2e56ad243b4be012991d2ebfb9)
+        ;
+
+        
+    
+    
+        var popup_d0451d6029c5da068e962bf7ba07243e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a852c25f40699b84fb2dab82fece1485 = $(`<div id="html_a852c25f40699b84fb2dab82fece1485" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Дудник Лекарственный', 'Пион Уклоняющийся', 'Плаун Булавовидный', 'Родиола Розовая', 'Толокнянка Обыкновенная']<br>             <b>Region:</b> Ненецкий автономный округ         </div>         </div>`)[0];
+                popup_d0451d6029c5da068e962bf7ba07243e.setContent(html_a852c25f40699b84fb2dab82fece1485);
+            
+        
+
+        marker_7abb812b4e20cc6d7cd313eb8d55c12c.bindPopup(popup_d0451d6029c5da068e962bf7ba07243e)
+        ;
+
+        
+    
+    
+            var marker_0456b3964495f98be63078d160be653f = L.marker(
+                [66.530937, 66.602432],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_3d93d414bac56fa3c628ed5b956cc9b8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fe7d265256b8586660ab200652aa7625 = $(`<div id="html_fe7d265256b8586660ab200652aa7625" style="width: 100.0%; height: 100.0%;">Ямало-Ненецкий автономный округ</div>`)[0];
+                popup_3d93d414bac56fa3c628ed5b956cc9b8.setContent(html_fe7d265256b8586660ab200652aa7625);
+            
+        
+
+        marker_0456b3964495f98be63078d160be653f.bindPopup(popup_3d93d414bac56fa3c628ed5b956cc9b8)
+        ;
+
+        
+    
+    
+        var popup_368339e625a48640796ce1e138e394d4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c8c1c7e7da4f77511d7e5784b6c47da4 = $(`<div id="html_c8c1c7e7da4f77511d7e5784b6c47da4" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Пион Уклоняющийся', 'Плаун Булавовидный', 'Родиола Розовая', 'Толокнянка Обыкновенная']<br>             <b>Region:</b> Ямало-Ненецкий автономный округ         </div>         </div>`)[0];
+                popup_368339e625a48640796ce1e138e394d4.setContent(html_c8c1c7e7da4f77511d7e5784b6c47da4);
+            
+        
+
+        marker_0456b3964495f98be63078d160be653f.bindPopup(popup_368339e625a48640796ce1e138e394d4)
+        ;
+
+        
+    
+    
+            var marker_3232c59dda9f9a3104b2aca00447b59d = L.marker(
+                [64.736656, 177.477371],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_d4e2eb5d948137495e43124c0d998778 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5400baecb24e35d52bb513bfe0edfa57 = $(`<div id="html_5400baecb24e35d52bb513bfe0edfa57" style="width: 100.0%; height: 100.0%;">Чукотский автономный округ</div>`)[0];
+                popup_d4e2eb5d948137495e43124c0d998778.setContent(html_5400baecb24e35d52bb513bfe0edfa57);
+            
+        
+
+        marker_3232c59dda9f9a3104b2aca00447b59d.bindPopup(popup_d4e2eb5d948137495e43124c0d998778)
+        ;
+
+        
+    
+    
+        var popup_1d8bb43d008d994a3a6d8aa4997b1a73 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d0157ad3ba7e531608858bb00ecdd6e4 = $(`<div id="html_d0157ad3ba7e531608858bb00ecdd6e4" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Баранец Обыкновенный', 'Валериана Лекарственная', 'Горец Птичий', 'Одуванчик Изогнутый', 'Плаун Булавовидный', 'Родиола Розовая']<br>             <b>Region:</b> Чукотский автономный округ         </div>         </div>`)[0];
+                popup_1d8bb43d008d994a3a6d8aa4997b1a73.setContent(html_d0157ad3ba7e531608858bb00ecdd6e4);
+            
+        
+
+        marker_3232c59dda9f9a3104b2aca00447b59d.bindPopup(popup_1d8bb43d008d994a3a6d8aa4997b1a73)
+        ;
+
+        
+    
+    
+            var marker_54303e83eccb9a4c8ed715fd6ce7e496 = L.marker(
+                [64.536926, 40.565571],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_16e054c36204b0ea409d80d21404e542 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_40ca253a26bbb1b5f90ceab8d7cc6533 = $(`<div id="html_40ca253a26bbb1b5f90ceab8d7cc6533" style="width: 100.0%; height: 100.0%;">Архангельская область</div>`)[0];
+                popup_16e054c36204b0ea409d80d21404e542.setContent(html_40ca253a26bbb1b5f90ceab8d7cc6533);
+            
+        
+
+        marker_54303e83eccb9a4c8ed715fd6ce7e496.bindPopup(popup_16e054c36204b0ea409d80d21404e542)
+        ;
+
+        
+    
+    
+        var popup_af903b2ba44f75634955a867a8d0d853 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_377b79f7231dcde2e75886cf11849d81 = $(`<div id="html_377b79f7231dcde2e75886cf11849d81" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Белена Черная', 'Горец Перечный', 'Горец Почечуйный', 'Дудник Лекарственный', 'Ель Обыкновенная', 'Зверобой Продырявленный', 'Зюзник Европейский', 'Кровохлёбка Лекарственная', 'Лапчатка Серебристая', 'Подорожник Большой', 'Репешок Обыкновенный', 'Родиола Розовая', 'Ромашка Безъязычковая', 'Толокнянка Обыкновенная', 'Череда Трёхраздельная', 'Щитовник Мужской']<br>             <b>Region:</b> Архангельская область         </div>         </div>`)[0];
+                popup_af903b2ba44f75634955a867a8d0d853.setContent(html_377b79f7231dcde2e75886cf11849d81);
+            
+        
+
+        marker_54303e83eccb9a4c8ed715fd6ce7e496.bindPopup(popup_af903b2ba44f75634955a867a8d0d853)
+        ;
+
+        
+    
+    
+            var marker_7d53d17dbfdb8d1839f48f3b861c4472 = L.marker(
+                [62.039261, 129.746399],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_c8a1c3b5b1def694eb4e40c751e2791f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_159f56e96ebd7a44d002b2dac93898ac = $(`<div id="html_159f56e96ebd7a44d002b2dac93898ac" style="width: 100.0%; height: 100.0%;">Саха (Якутия)</div>`)[0];
+                popup_c8a1c3b5b1def694eb4e40c751e2791f.setContent(html_159f56e96ebd7a44d002b2dac93898ac);
+            
+        
+
+        marker_7d53d17dbfdb8d1839f48f3b861c4472.bindPopup(popup_c8a1c3b5b1def694eb4e40c751e2791f)
+        ;
+
+        
+    
+    
+        var popup_f8afa2bf3b7281e9f714082dcff0a2bb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ce83f90bf998979d819355eae2ef1c02 = $(`<div id="html_ce83f90bf998979d819355eae2ef1c02" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Аир Обыкновенный', 'Аралия Высокая', 'Багульник Болотный', 'Брусника Обыкновенная', 'Горец Перечный', 'Горец Почечуйный', 'Горец Птичий', 'Кровохлёбка Лекарственная', 'Ламинария Японская', 'Леспедеца Двуцветная', 'Лимонник Китайский', 'Лопух Большой', 'Пастушья Сумка Обыкновенная', 'Пион Уклоняющийся', 'Плаун Булавовидный', 'Родиола Розовая', 'Ромашка Безъязычковая', 'Свободноягодник Колючий', 'Толокнянка Обыкновенная', 'Тысячелистник Обыкновенный', 'Черёмуха Обыкновенная', 'Чистотел Большой', 'Шиповник Майский', 'Шлемник Байкальский']<br>             <b>Region:</b> Саха (Якутия)         </div>         </div>`)[0];
+                popup_f8afa2bf3b7281e9f714082dcff0a2bb.setContent(html_ce83f90bf998979d819355eae2ef1c02);
+            
+        
+
+        marker_7d53d17dbfdb8d1839f48f3b861c4472.bindPopup(popup_f8afa2bf3b7281e9f714082dcff0a2bb)
+        ;
+
+        
+    
+    
+            var marker_51b66824d7087dca8b313f3e2dc8a5ab = L.marker(
+                [61.7822, 34.36208],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_ecc8ee591e431621cb8ad1cd8a0fe6e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_19ffcab01bd4356c84dc08005a4cb4c4 = $(`<div id="html_19ffcab01bd4356c84dc08005a4cb4c4" style="width: 100.0%; height: 100.0%;">Карелия</div>`)[0];
+                popup_ecc8ee591e431621cb8ad1cd8a0fe6e2.setContent(html_19ffcab01bd4356c84dc08005a4cb4c4);
+            
+        
+
+        marker_51b66824d7087dca8b313f3e2dc8a5ab.bindPopup(popup_ecc8ee591e431621cb8ad1cd8a0fe6e2)
+        ;
+
+        
+    
+    
+        var popup_7680086a23c47ee086246732817681a3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d90cdf8403d14cac8c50213233acf5a1 = $(`<div id="html_d90cdf8403d14cac8c50213233acf5a1" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Аир Обыкновенный', 'Валериана Лекарственная', 'Горец Перечный', 'Девясил Высокий', 'Дуб Обыкновенный', 'Дудник Лекарственный', 'Лопух Большой', 'Репешок Обыкновенный', 'Родиола Розовая', 'Ромашка Аптечная', 'Синюха Голубая', 'Толокнянка Обыкновенная', 'Щитовник Мужской']<br>             <b>Region:</b> Карелия         </div>         </div>`)[0];
+                popup_7680086a23c47ee086246732817681a3.setContent(html_d90cdf8403d14cac8c50213233acf5a1);
+            
+        
+
+        marker_51b66824d7087dca8b313f3e2dc8a5ab.bindPopup(popup_7680086a23c47ee086246732817681a3)
+        ;
+
+        
+    
+    
+            var marker_a0eaadc324d5e1c5ca4e7b32b25af351 = L.marker(
+                [61.681862, 50.812771],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_bdf3d3462f4964839da8c8b65a44ae2a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e617192fa2e782595fc8d18f82d38561 = $(`<div id="html_e617192fa2e782595fc8d18f82d38561" style="width: 100.0%; height: 100.0%;">Коми</div>`)[0];
+                popup_bdf3d3462f4964839da8c8b65a44ae2a.setContent(html_e617192fa2e782595fc8d18f82d38561);
+            
+        
+
+        marker_a0eaadc324d5e1c5ca4e7b32b25af351.bindPopup(popup_bdf3d3462f4964839da8c8b65a44ae2a)
+        ;
+
+        
+    
+    
+        var popup_3cca6fde42da6cb5d0724fa053e85a09 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_718406aec0aefcb654fdf0c39a097f91 = $(`<div id="html_718406aec0aefcb654fdf0c39a097f91" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Горец Змеиный', 'Дудник Лекарственный', 'Зюзник Европейский', 'Пион Уклоняющийся', 'Репешок Обыкновенный', 'Родиола Розовая', 'Ромашка Безъязычковая', 'Тимьян Ползучий', 'Толокнянка Обыкновенная']<br>             <b>Region:</b> Коми         </div>         </div>`)[0];
+                popup_3cca6fde42da6cb5d0724fa053e85a09.setContent(html_718406aec0aefcb654fdf0c39a097f91);
+            
+        
+
+        marker_a0eaadc324d5e1c5ca4e7b32b25af351.bindPopup(popup_3cca6fde42da6cb5d0724fa053e85a09)
+        ;
+
+        
+    
+    
+            var marker_ef60885ab39548f6ad9382f1cd752756 = L.marker(
+                [61.00079, 69.006241],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_1b60a80d8477c61e09ae7f9e3d73dafa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_711f6c4d2634d46cbfa0faa86952667b = $(`<div id="html_711f6c4d2634d46cbfa0faa86952667b" style="width: 100.0%; height: 100.0%;">Ханты-Мансийский автономный округ - Югра</div>`)[0];
+                popup_1b60a80d8477c61e09ae7f9e3d73dafa.setContent(html_711f6c4d2634d46cbfa0faa86952667b);
+            
+        
+
+        marker_ef60885ab39548f6ad9382f1cd752756.bindPopup(popup_1b60a80d8477c61e09ae7f9e3d73dafa)
+        ;
+
+        
+    
+    
+        var popup_92d23436247351258ea5c97a7e39c50c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_397ece550a78920bf9e9364e7f673a4d = $(`<div id="html_397ece550a78920bf9e9364e7f673a4d" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Баранец Обыкновенный', 'Мать-И-Мачеха Обыкновенная', 'Пион Уклоняющийся', 'Родиола Розовая', 'Ромашка Безъязычковая', 'Толокнянка Обыкновенная', 'Тысячелистник Обыкновенный']<br>             <b>Region:</b> Ханты-Мансийский автономный округ - Югра         </div>         </div>`)[0];
+                popup_92d23436247351258ea5c97a7e39c50c.setContent(html_397ece550a78920bf9e9364e7f673a4d);
+            
+        
+
+        marker_ef60885ab39548f6ad9382f1cd752756.bindPopup(popup_92d23436247351258ea5c97a7e39c50c)
+        ;
+
+        
+    
+    
+            var marker_a5c79f534a9d3dd2d8497a973c435829 = L.marker(
+                [59.939037, 30.315784],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_9b5edcd6f880423de1e51a68338ef869 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5f1cd3a0609e8a39c5d7e1caf088bc19 = $(`<div id="html_5f1cd3a0609e8a39c5d7e1caf088bc19" style="width: 100.0%; height: 100.0%;">Ленинградская область</div>`)[0];
+                popup_9b5edcd6f880423de1e51a68338ef869.setContent(html_5f1cd3a0609e8a39c5d7e1caf088bc19);
+            
+        
+
+        marker_a5c79f534a9d3dd2d8497a973c435829.bindPopup(popup_9b5edcd6f880423de1e51a68338ef869)
+        ;
+
+        
+    
+    
+        var popup_074296ea311f6079dd7ed3f78ad47eb9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fcb74cbc89b623c76d53920f48c09c40 = $(`<div id="html_fcb74cbc89b623c76d53920f48c09c40" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Барбарис Обыкновенный', 'Бессмертник Песчаный', 'Дурман Обыкновенный', 'Дудник Лекарственный', 'Жостер Слабительный', 'Кровохлёбка Лекарственная', 'Подофилл Щитовидный', 'Репешок Обыкновенный', 'Толокнянка Обыкновенная']<br>             <b>Region:</b> Ленинградская область         </div>         </div>`)[0];
+                popup_074296ea311f6079dd7ed3f78ad47eb9.setContent(html_fcb74cbc89b623c76d53920f48c09c40);
+            
+        
+
+        marker_a5c79f534a9d3dd2d8497a973c435829.bindPopup(popup_074296ea311f6079dd7ed3f78ad47eb9)
+        ;
+
+        
+    
+    
+            var marker_55c3b10757c2391bae270ed6730f0e89 = L.marker(
+                [59.939037, 30.315784],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_b57494e00ec177a9ad7d65ff62ea8a38 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_06457d7e9f9c50bf9baa15923fb6c589 = $(`<div id="html_06457d7e9f9c50bf9baa15923fb6c589" style="width: 100.0%; height: 100.0%;">Санкт-Петербург</div>`)[0];
+                popup_b57494e00ec177a9ad7d65ff62ea8a38.setContent(html_06457d7e9f9c50bf9baa15923fb6c589);
+            
+        
+
+        marker_55c3b10757c2391bae270ed6730f0e89.bindPopup(popup_b57494e00ec177a9ad7d65ff62ea8a38)
+        ;
+
+        
+    
+    
+        var popup_0a1817b49636ea3e5a607982aa0da4d1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bfbe165bc0016955d1b599661cfdd0a9 = $(`<div id="html_bfbe165bc0016955d1b599661cfdd0a9" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Бархат Амурский', 'Золототысячник Обыкновенный', 'Щавель Конский']<br>             <b>Region:</b> Санкт-Петербург         </div>         </div>`)[0];
+                popup_0a1817b49636ea3e5a607982aa0da4d1.setContent(html_bfbe165bc0016955d1b599661cfdd0a9);
+            
+        
+
+        marker_55c3b10757c2391bae270ed6730f0e89.bindPopup(popup_0a1817b49636ea3e5a607982aa0da4d1)
+        ;
+
+        
+    
+    
+            var marker_b48df5358cf2a6fe0349eb5da4581478 = L.marker(
+                [59.55632, 150.81308],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_72ba7b3b9120fd81ef52b0a398b4018e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4d971effa761d7f5c525592e69c78ad9 = $(`<div id="html_4d971effa761d7f5c525592e69c78ad9" style="width: 100.0%; height: 100.0%;">Магаданская область</div>`)[0];
+                popup_72ba7b3b9120fd81ef52b0a398b4018e.setContent(html_4d971effa761d7f5c525592e69c78ad9);
+            
+        
+
+        marker_b48df5358cf2a6fe0349eb5da4581478.bindPopup(popup_72ba7b3b9120fd81ef52b0a398b4018e)
+        ;
+
+        
+    
+    
+        var popup_05fc6095aa0b97873c70a76f36d63292 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_89520510d244756a33c23799b4368262 = $(`<div id="html_89520510d244756a33c23799b4368262" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Багульник Болотный', 'Одуванчик Изогнутый', 'Плаун Булавовидный']<br>             <b>Region:</b> Магаданская область         </div>         </div>`)[0];
+                popup_05fc6095aa0b97873c70a76f36d63292.setContent(html_89520510d244756a33c23799b4368262);
+            
+        
+
+        marker_b48df5358cf2a6fe0349eb5da4581478.bindPopup(popup_05fc6095aa0b97873c70a76f36d63292)
+        ;
+
+        
+    
+    
+            var marker_62c084f7da1b797cdf6b265e51c924bb = L.marker(
+                [59.21524, 39.876709],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_b7ee172b96ae9132f38c9c031fc0a32b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_953b43976ce372755ab87f33573e5523 = $(`<div id="html_953b43976ce372755ab87f33573e5523" style="width: 100.0%; height: 100.0%;">Вологодская область</div>`)[0];
+                popup_b7ee172b96ae9132f38c9c031fc0a32b.setContent(html_953b43976ce372755ab87f33573e5523);
+            
+        
+
+        marker_62c084f7da1b797cdf6b265e51c924bb.bindPopup(popup_b7ee172b96ae9132f38c9c031fc0a32b)
+        ;
+
+        
+    
+    
+        var popup_192fe113a45a909dbeff49fe9f6fccc6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_99746abb747e165535fce44c6cceda7c = $(`<div id="html_99746abb747e165535fce44c6cceda7c" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Белокопытник Гибридный', 'Грыжник Гладкий', 'Девясил Высокий', 'Дуб Обыкновенный', 'Дудник Лекарственный', 'Золототысячник Обыкновенный', 'Копеечник Альпийский', 'Кровохлёбка Лекарственная', 'Морковь Дикая', 'Репешок Волосистый', 'Репешок Обыкновенный', 'Ромашка Аптечная', 'Толокнянка Обыкновенная', 'Чемерица Лобеля']<br>             <b>Region:</b> Вологодская область         </div>         </div>`)[0];
+                popup_192fe113a45a909dbeff49fe9f6fccc6.setContent(html_99746abb747e165535fce44c6cceda7c);
+            
+        
+
+        marker_62c084f7da1b797cdf6b265e51c924bb.bindPopup(popup_192fe113a45a909dbeff49fe9f6fccc6)
+        ;
+
+        
+    
+    
+            var marker_5a18bb8e3e08ca29c089246232b1c4da = L.marker(
+                [58.596081, 49.662659],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_787564e50989410e7ba25ff145a313cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7e367c5e998c2d2a9ff6cb08e336688a = $(`<div id="html_7e367c5e998c2d2a9ff6cb08e336688a" style="width: 100.0%; height: 100.0%;">Кировская область</div>`)[0];
+                popup_787564e50989410e7ba25ff145a313cd.setContent(html_7e367c5e998c2d2a9ff6cb08e336688a);
+            
+        
+
+        marker_5a18bb8e3e08ca29c089246232b1c4da.bindPopup(popup_787564e50989410e7ba25ff145a313cd)
+        ;
+
+        
+    
+    
+        var popup_63312dff7f4e48e1ee000ec374baef26 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e15bd808c5c993f477aa0d26ace85b84 = $(`<div id="html_e15bd808c5c993f477aa0d26ace85b84" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Боярышник Кроваво-Красный', 'Дуб Обыкновенный', 'Дудник Лекарственный', 'Женьшень', 'Жостер Слабительный', 'Лабазник Обыкновенный', 'Наперстянка Крупноцветковая', 'Пион Уклоняющийся', 'Полынь Горькая', 'Репешок Обыкновенный', 'Ромашка Аптечная', 'Толокнянка Обыкновенная', 'Щавель Конский']<br>             <b>Region:</b> Кировская область         </div>         </div>`)[0];
+                popup_63312dff7f4e48e1ee000ec374baef26.setContent(html_e15bd808c5c993f477aa0d26ace85b84);
+            
+        
+
+        marker_5a18bb8e3e08ca29c089246232b1c4da.bindPopup(popup_63312dff7f4e48e1ee000ec374baef26)
+        ;
+
+        
+    
+    
+            var marker_23ba687c7ff8a963e3222da4c756f03c = L.marker(
+                [58.544971, 31.269119],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_13108ed484343ddd5faa31214a2ecff7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9b12dc51d6478df875c4254700cea58a = $(`<div id="html_9b12dc51d6478df875c4254700cea58a" style="width: 100.0%; height: 100.0%;">Новгородская область</div>`)[0];
+                popup_13108ed484343ddd5faa31214a2ecff7.setContent(html_9b12dc51d6478df875c4254700cea58a);
+            
+        
+
+        marker_23ba687c7ff8a963e3222da4c756f03c.bindPopup(popup_13108ed484343ddd5faa31214a2ecff7)
+        ;
+
+        
+    
+    
+        var popup_dac0c076550a4deb9927c51d32cf5b56 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6de974239730e0d2c2cb0a249f8bc099 = $(`<div id="html_6de974239730e0d2c2cb0a249f8bc099" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Белокопытник Гибридный', 'Бессмертник Песчаный', 'Дурман Обыкновенный', 'Дудник Лекарственный', 'Кровохлёбка Лекарственная', 'Лабазник Обыкновенный', 'Репешок Обыкновенный', 'Толокнянка Обыкновенная']<br>             <b>Region:</b> Новгородская область         </div>         </div>`)[0];
+                popup_dac0c076550a4deb9927c51d32cf5b56.setContent(html_6de974239730e0d2c2cb0a249f8bc099);
+            
+        
+
+        marker_23ba687c7ff8a963e3222da4c756f03c.bindPopup(popup_dac0c076550a4deb9927c51d32cf5b56)
+        ;
+
+        
+    
+    
+            var marker_346dde4f25653aa57f9525c94061734c = L.marker(
+                [57.997169, 56.235279],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_a7fb4967f6fb20e78c50eadb36edaa50 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_91d706d7272e8a6fcad8ef9a0947d243 = $(`<div id="html_91d706d7272e8a6fcad8ef9a0947d243" style="width: 100.0%; height: 100.0%;">Пермский край</div>`)[0];
+                popup_a7fb4967f6fb20e78c50eadb36edaa50.setContent(html_91d706d7272e8a6fcad8ef9a0947d243);
+            
+        
+
+        marker_346dde4f25653aa57f9525c94061734c.bindPopup(popup_a7fb4967f6fb20e78c50eadb36edaa50)
+        ;
+
+        
+    
+    
+        var popup_c468d3925109d1c776ab3045851e52eb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_79431158c701134fc8fc5d2e50381ae6 = $(`<div id="html_79431158c701134fc8fc5d2e50381ae6" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Боярышник Кроваво-Красный', 'Горицвет Весенний', 'Дудник Лекарственный', 'Наперстянка Крупноцветковая', 'Пион Уклоняющийся', 'Репешок Обыкновенный', 'Родиола Розовая', 'Тимьян Ползучий', 'Толокнянка Обыкновенная']<br>             <b>Region:</b> Пермский край         </div>         </div>`)[0];
+                popup_c468d3925109d1c776ab3045851e52eb.setContent(html_79431158c701134fc8fc5d2e50381ae6);
+            
+        
+
+        marker_346dde4f25653aa57f9525c94061734c.bindPopup(popup_c468d3925109d1c776ab3045851e52eb)
+        ;
+
+        
+    
+    
+            var marker_f78f8d5f245f9c08f0666a6537acef57 = L.marker(
+                [57.824371, 28.33049],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_7a38e315e6a6dc28a0ae18c301b9ac8c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c41550577e5bcb0f827757b548188e7e = $(`<div id="html_c41550577e5bcb0f827757b548188e7e" style="width: 100.0%; height: 100.0%;">Псковская область</div>`)[0];
+                popup_7a38e315e6a6dc28a0ae18c301b9ac8c.setContent(html_c41550577e5bcb0f827757b548188e7e);
+            
+        
+
+        marker_f78f8d5f245f9c08f0666a6537acef57.bindPopup(popup_7a38e315e6a6dc28a0ae18c301b9ac8c)
+        ;
+
+        
+    
+    
+        var popup_d707b362d4824a490f486830dc8e4d92 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_96e4618b5d6c0434f17f2d1875e60f32 = $(`<div id="html_96e4618b5d6c0434f17f2d1875e60f32" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Бессмертник Песчаный', 'Дурман Обыкновенный', 'Дудник Лекарственный', 'Кровохлёбка Лекарственная', 'Наперстянка Крупноцветковая', 'Репешок Обыкновенный', 'Толокнянка Обыкновенная']<br>             <b>Region:</b> Псковская область         </div>         </div>`)[0];
+                popup_d707b362d4824a490f486830dc8e4d92.setContent(html_96e4618b5d6c0434f17f2d1875e60f32);
+            
+        
+
+        marker_f78f8d5f245f9c08f0666a6537acef57.bindPopup(popup_d707b362d4824a490f486830dc8e4d92)
+        ;
+
+        
+    
+    
+            var marker_cebea40718ed0d4e84a411917970b503 = L.marker(
+                [57.780739, 40.936691],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_87c03a8407d94cb85e189e49b8a184c4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9e3f07e9e6341c8ae25c3ae8f37bfa44 = $(`<div id="html_9e3f07e9e6341c8ae25c3ae8f37bfa44" style="width: 100.0%; height: 100.0%;">Костромская область</div>`)[0];
+                popup_87c03a8407d94cb85e189e49b8a184c4.setContent(html_9e3f07e9e6341c8ae25c3ae8f37bfa44);
+            
+        
+
+        marker_cebea40718ed0d4e84a411917970b503.bindPopup(popup_87c03a8407d94cb85e189e49b8a184c4)
+        ;
+
+        
+    
+    
+        var popup_ef229375e858cd1c8bcda9610b6c0d6a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_19f662b5c6e1b6c6fe00915872af5d1a = $(`<div id="html_19f662b5c6e1b6c6fe00915872af5d1a" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Дудник Лекарственный', 'Репешок Обыкновенный', 'Толокнянка Обыкновенная']<br>             <b>Region:</b> Костромская область         </div>         </div>`)[0];
+                popup_ef229375e858cd1c8bcda9610b6c0d6a.setContent(html_19f662b5c6e1b6c6fe00915872af5d1a);
+            
+        
+
+        marker_cebea40718ed0d4e84a411917970b503.bindPopup(popup_ef229375e858cd1c8bcda9610b6c0d6a)
+        ;
+
+        
+    
+    
+            var marker_7b0d238370c8b818fc468c5015a5fd18 = L.marker(
+                [57.6301, 39.865631],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_65a039c10ead5d28cdd7a017bde80804 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_96cb8b73f50be11a49a0fa6ae7b890ad = $(`<div id="html_96cb8b73f50be11a49a0fa6ae7b890ad" style="width: 100.0%; height: 100.0%;">Ярославская область</div>`)[0];
+                popup_65a039c10ead5d28cdd7a017bde80804.setContent(html_96cb8b73f50be11a49a0fa6ae7b890ad);
+            
+        
+
+        marker_7b0d238370c8b818fc468c5015a5fd18.bindPopup(popup_65a039c10ead5d28cdd7a017bde80804)
+        ;
+
+        
+    
+    
+        var popup_e4172f9e0e3d9f2ac463c0fe96063f9f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7ef9ca74074608d6aa75fe26877f46b9 = $(`<div id="html_7ef9ca74074608d6aa75fe26877f46b9" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Боярышник Кроваво-Красный', 'Девясил Высокий', 'Дудник Лекарственный', 'Репешок Обыкновенный', 'Толокнянка Обыкновенная', 'Щавель Конский']<br>             <b>Region:</b> Ярославская область         </div>         </div>`)[0];
+                popup_e4172f9e0e3d9f2ac463c0fe96063f9f.setContent(html_7ef9ca74074608d6aa75fe26877f46b9);
+            
+        
+
+        marker_7b0d238370c8b818fc468c5015a5fd18.bindPopup(popup_e4172f9e0e3d9f2ac463c0fe96063f9f)
+        ;
+
+        
+    
+    
+            var marker_2cd2467ada111773e23a48328910d4f8 = L.marker(
+                [57.154949, 65.51564],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_8d924fb5171c8f04c47fd5c420236dc4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b83df3f4e6aaa26134a8b2afc1aae640 = $(`<div id="html_b83df3f4e6aaa26134a8b2afc1aae640" style="width: 100.0%; height: 100.0%;">Тюменская область</div>`)[0];
+                popup_8d924fb5171c8f04c47fd5c420236dc4.setContent(html_b83df3f4e6aaa26134a8b2afc1aae640);
+            
+        
+
+        marker_2cd2467ada111773e23a48328910d4f8.bindPopup(popup_8d924fb5171c8f04c47fd5c420236dc4)
+        ;
+
+        
+    
+    
+        var popup_1a86610da9e10fba5eac28674f32a798 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5e267054c9eaf2f722bea7bb29a8544d = $(`<div id="html_5e267054c9eaf2f722bea7bb29a8544d" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Бессмертник Песчаный', 'Горицвет Весенний', 'Копеечник Альпийский', 'Копытень Европейский', 'Лапчатка Серебристая', 'Пион Уклоняющийся', 'Ромашка Безъязычковая', 'Тимьян Ползучий']<br>             <b>Region:</b> Тюменская область         </div>         </div>`)[0];
+                popup_1a86610da9e10fba5eac28674f32a798.setContent(html_5e267054c9eaf2f722bea7bb29a8544d);
+            
+        
+
+        marker_2cd2467ada111773e23a48328910d4f8.bindPopup(popup_1a86610da9e10fba5eac28674f32a798)
+        ;
+
+        
+    
+    
+            var marker_073dc04c68d6438c34ec43afc54b6018 = L.marker(
+                [56.992409, 40.967789],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_e4d74dfb77750b5f2481f316ec09c47c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_92f45dd0ca4181a74c4c1c2180228f54 = $(`<div id="html_92f45dd0ca4181a74c4c1c2180228f54" style="width: 100.0%; height: 100.0%;">Ивановская область</div>`)[0];
+                popup_e4d74dfb77750b5f2481f316ec09c47c.setContent(html_92f45dd0ca4181a74c4c1c2180228f54);
+            
+        
+
+        marker_073dc04c68d6438c34ec43afc54b6018.bindPopup(popup_e4d74dfb77750b5f2481f316ec09c47c)
+        ;
+
+        
+    
+    
+        var popup_ec3d1ad1b8ecfdbd91c5bae9428aacd5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_62451331b5bb7170574942157eefde17 = $(`<div id="html_62451331b5bb7170574942157eefde17" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Боярышник Кроваво-Красный', 'Дудник Лекарственный', 'Репешок Обыкновенный', 'Родиола Розовая', 'Тимьян Ползучий']<br>             <b>Region:</b> Ивановская область         </div>         </div>`)[0];
+                popup_ec3d1ad1b8ecfdbd91c5bae9428aacd5.setContent(html_62451331b5bb7170574942157eefde17);
+            
+        
+
+        marker_073dc04c68d6438c34ec43afc54b6018.bindPopup(popup_ec3d1ad1b8ecfdbd91c5bae9428aacd5)
+        ;
+
+        
+    
+    
+            var marker_a3b1c6325bca13c6cb0564780bede291 = L.marker(
+                [56.857929, 35.923828],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_d8ab6119f39b97ed1988ab7f898780a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4b3442bfbdb8342afdc96ceb78981b47 = $(`<div id="html_4b3442bfbdb8342afdc96ceb78981b47" style="width: 100.0%; height: 100.0%;">Тверская область</div>`)[0];
+                popup_d8ab6119f39b97ed1988ab7f898780a6.setContent(html_4b3442bfbdb8342afdc96ceb78981b47);
+            
+        
+
+        marker_a3b1c6325bca13c6cb0564780bede291.bindPopup(popup_d8ab6119f39b97ed1988ab7f898780a6)
+        ;
+
+        
+    
+    
+        var popup_55983349ad750ac4feb1435d2dfde6ca = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_43b2349349cb226a19b19dec9dc4e87b = $(`<div id="html_43b2349349cb226a19b19dec9dc4e87b" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Бессмертник Песчаный', 'Дурман Обыкновенный', 'Дудник Лекарственный', 'Наперстянка Крупноцветковая', 'Репешок Обыкновенный', 'Толокнянка Обыкновенная']<br>             <b>Region:</b> Тверская область         </div>         </div>`)[0];
+                popup_55983349ad750ac4feb1435d2dfde6ca.setContent(html_43b2349349cb226a19b19dec9dc4e87b);
+            
+        
+
+        marker_a3b1c6325bca13c6cb0564780bede291.bindPopup(popup_55983349ad750ac4feb1435d2dfde6ca)
+        ;
+
+        
+    
+    
+            var marker_0aaea93cfb4c0227a46b1ba2cd530eee = L.marker(
+                [56.842609, 53.224449],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_9820b5b775c2caf72dc802e744f480f9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ece22549e1430944e025c61533d97021 = $(`<div id="html_ece22549e1430944e025c61533d97021" style="width: 100.0%; height: 100.0%;">Удмуртская Республика</div>`)[0];
+                popup_9820b5b775c2caf72dc802e744f480f9.setContent(html_ece22549e1430944e025c61533d97021);
+            
+        
+
+        marker_0aaea93cfb4c0227a46b1ba2cd530eee.bindPopup(popup_9820b5b775c2caf72dc802e744f480f9)
+        ;
+
+        
+    
+    
+        var popup_f17c68c9850a76b582ef78997d4ff8d9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_50c4228714124eb4892c7161b0690db6 = $(`<div id="html_50c4228714124eb4892c7161b0690db6" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Дурман Обыкновенный', 'Дудник Лекарственный', 'Пион Уклоняющийся', 'Плаун Булавовидный', 'Репешок Обыкновенный', 'Тимьян Ползучий', 'Толокнянка Обыкновенная']<br>             <b>Region:</b> Удмуртская Республика         </div>         </div>`)[0];
+                popup_f17c68c9850a76b582ef78997d4ff8d9.setContent(html_50c4228714124eb4892c7161b0690db6);
+            
+        
+
+        marker_0aaea93cfb4c0227a46b1ba2cd530eee.bindPopup(popup_f17c68c9850a76b582ef78997d4ff8d9)
+        ;
+
+        
+    
+    
+            var marker_97c96ab51c2d4e17eba3e860aacc0011 = L.marker(
+                [56.837814, 60.596844],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_d1d7612b82acaf365c30acc7137025fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cef1d2addf83a479d5d5f23a9db06b1e = $(`<div id="html_cef1d2addf83a479d5d5f23a9db06b1e" style="width: 100.0%; height: 100.0%;">Свердловская область</div>`)[0];
+                popup_d1d7612b82acaf365c30acc7137025fd.setContent(html_cef1d2addf83a479d5d5f23a9db06b1e);
+            
+        
+
+        marker_97c96ab51c2d4e17eba3e860aacc0011.bindPopup(popup_d1d7612b82acaf365c30acc7137025fd)
+        ;
+
+        
+    
+    
+        var popup_bae38f2e3f496c7bc6ed701023709ca7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_23d7f3b6f91552d87d4dd3cd0c9f8749 = $(`<div id="html_23d7f3b6f91552d87d4dd3cd0c9f8749" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Горицвет Весенний', 'Дудник Лекарственный', 'Лапчатка Серебристая', 'Наперстянка Крупноцветковая', 'Пион Уклоняющийся', 'Репешок Обыкновенный', 'Родиола Розовая', 'Тимьян Ползучий', 'Толокнянка Обыкновенная']<br>             <b>Region:</b> Свердловская область         </div>         </div>`)[0];
+                popup_bae38f2e3f496c7bc6ed701023709ca7.setContent(html_23d7f3b6f91552d87d4dd3cd0c9f8749);
+            
+        
+
+        marker_97c96ab51c2d4e17eba3e860aacc0011.bindPopup(popup_bae38f2e3f496c7bc6ed701023709ca7)
+        ;
+
+        
+    
+    
+            var marker_ae4302c37b6e465323716bcc937b88fa = L.marker(
+                [56.637501, 47.891499],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_49f1a3b8a7f2aa61f8e0f7e9a79f2250 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dc5ca6241a6a4dfade4d101349c4223b = $(`<div id="html_dc5ca6241a6a4dfade4d101349c4223b" style="width: 100.0%; height: 100.0%;">Марий Эл</div>`)[0];
+                popup_49f1a3b8a7f2aa61f8e0f7e9a79f2250.setContent(html_dc5ca6241a6a4dfade4d101349c4223b);
+            
+        
+
+        marker_ae4302c37b6e465323716bcc937b88fa.bindPopup(popup_49f1a3b8a7f2aa61f8e0f7e9a79f2250)
+        ;
+
+        
+    
+    
+        var popup_85ffd2b9cd07b37ee1bfac17844dc719 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bbf46bfb47ff659cfa452ef5dff93e8c = $(`<div id="html_bbf46bfb47ff659cfa452ef5dff93e8c" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Дурман Обыкновенный', 'Дудник Лекарственный', 'Репешок Обыкновенный', 'Толокнянка Обыкновенная']<br>             <b>Region:</b> Марий Эл         </div>         </div>`)[0];
+                popup_85ffd2b9cd07b37ee1bfac17844dc719.setContent(html_bbf46bfb47ff659cfa452ef5dff93e8c);
+            
+        
+
+        marker_ae4302c37b6e465323716bcc937b88fa.bindPopup(popup_85ffd2b9cd07b37ee1bfac17844dc719)
+        ;
+
+        
+    
+    
+            var marker_5a236f2c14c6144db81f55ed3f78c1e4 = L.marker(
+                [56.463989, 84.962547],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_227fec9733b3bc4512f846a1a4135639 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f1ef16239728d32e0083e709a86cc0f4 = $(`<div id="html_f1ef16239728d32e0083e709a86cc0f4" style="width: 100.0%; height: 100.0%;">Томская область</div>`)[0];
+                popup_227fec9733b3bc4512f846a1a4135639.setContent(html_f1ef16239728d32e0083e709a86cc0f4);
+            
+        
+
+        marker_5a236f2c14c6144db81f55ed3f78c1e4.bindPopup(popup_227fec9733b3bc4512f846a1a4135639)
+        ;
+
+        
+    
+    
+        var popup_74a0a08d1d94bc4586937318f1d002a4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9e52b8efeb4d586919aa08540cb84c48 = $(`<div id="html_9e52b8efeb4d586919aa08540cb84c48" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Баранец Обыкновенный', 'Бессмертник Песчаный', 'Борец Северный', 'Боярышник Кроваво-Красный', 'Лапчатка Прямостоячая', 'Лапчатка Серебристая', 'Пустырник Сердечный', 'Репешок Волосистый', 'Ромашка Безъязычковая', 'Синюха Голубая', 'Толокнянка Обыкновенная', 'Фиалка Трёхцветная', 'Чемерица Лобеля']<br>             <b>Region:</b> Томская область         </div>         </div>`)[0];
+                popup_74a0a08d1d94bc4586937318f1d002a4.setContent(html_9e52b8efeb4d586919aa08540cb84c48);
+            
+        
+
+        marker_5a236f2c14c6144db81f55ed3f78c1e4.bindPopup(popup_74a0a08d1d94bc4586937318f1d002a4)
+        ;
+
+        
+    
+    
+            var marker_848160c638fccc38f087af32d108f34d = L.marker(
+                [56.329918, 44.009193],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_310c57eb91d487f90c8a117452746382 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b2363b098dc9ad7382aabc9d7bdf7931 = $(`<div id="html_b2363b098dc9ad7382aabc9d7bdf7931" style="width: 100.0%; height: 100.0%;">Нижегородская область</div>`)[0];
+                popup_310c57eb91d487f90c8a117452746382.setContent(html_b2363b098dc9ad7382aabc9d7bdf7931);
+            
+        
+
+        marker_848160c638fccc38f087af32d108f34d.bindPopup(popup_310c57eb91d487f90c8a117452746382)
+        ;
+
+        
+    
+    
+        var popup_9bc45a1f27bf8c4b484fec9738750050 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bd0739996bd484c5596e85220db70563 = $(`<div id="html_bd0739996bd484c5596e85220db70563" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Барбарис Обыкновенный', 'Бессмертник Песчаный', 'Боярышник Кроваво-Красный', 'Горицвет Весенний', 'Девясил Высокий', 'Дудник Лекарственный', 'Жостер Слабительный', 'Наперстянка Крупноцветковая', 'Репешок Обыкновенный', 'Тимьян Ползучий', 'Толокнянка Обыкновенная']<br>             <b>Region:</b> Нижегородская область         </div>         </div>`)[0];
+                popup_9bc45a1f27bf8c4b484fec9738750050.setContent(html_bd0739996bd484c5596e85220db70563);
+            
+        
+
+        marker_848160c638fccc38f087af32d108f34d.bindPopup(popup_9bc45a1f27bf8c4b484fec9738750050)
+        ;
+
+        
+    
+    
+            var marker_064cbbe1c9e71a4ef38535e0c9b69708 = L.marker(
+                [56.137451, 47.24403],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_0aeed778ca967c1a300567eadc6e4955 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4c5de177ce6c03700a0f17dad5005638 = $(`<div id="html_4c5de177ce6c03700a0f17dad5005638" style="width: 100.0%; height: 100.0%;">Чувашская Республика</div>`)[0];
+                popup_0aeed778ca967c1a300567eadc6e4955.setContent(html_4c5de177ce6c03700a0f17dad5005638);
+            
+        
+
+        marker_064cbbe1c9e71a4ef38535e0c9b69708.bindPopup(popup_0aeed778ca967c1a300567eadc6e4955)
+        ;
+
+        
+    
+    
+        var popup_d79171b56a1cc290f7b77017e73f844d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7c8438537c56aa65d8308407c0266888 = $(`<div id="html_7c8438537c56aa65d8308407c0266888" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Бессмертник Песчаный', 'Дудник Лекарственный', 'Змееголовник Молдавский', 'Толокнянка Обыкновенная']<br>             <b>Region:</b> Чувашская Республика         </div>         </div>`)[0];
+                popup_d79171b56a1cc290f7b77017e73f844d.setContent(html_7c8438537c56aa65d8308407c0266888);
+            
+        
+
+        marker_064cbbe1c9e71a4ef38535e0c9b69708.bindPopup(popup_d79171b56a1cc290f7b77017e73f844d)
+        ;
+
+        
+    
+    
+            var marker_870e95ea6b04f4904664f661c4504571 = L.marker(
+                [56.127701, 40.407558],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_6ac929ee8a88663a3e6187e408804424 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b295bee774906abe38255ac4ed493062 = $(`<div id="html_b295bee774906abe38255ac4ed493062" style="width: 100.0%; height: 100.0%;">Владимирская область</div>`)[0];
+                popup_6ac929ee8a88663a3e6187e408804424.setContent(html_b295bee774906abe38255ac4ed493062);
+            
+        
+
+        marker_870e95ea6b04f4904664f661c4504571.bindPopup(popup_6ac929ee8a88663a3e6187e408804424)
+        ;
+
+        
+    
+    
+        var popup_7946c08d24fc0fd1738a4a68c8fa343c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3f6eef45fec4ff35883be14a9ea70baf = $(`<div id="html_3f6eef45fec4ff35883be14a9ea70baf" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Аир Обыкновенный', 'Бессмертник Песчаный', 'Боярышник Кроваво-Красный', 'Дурман Обыкновенный', 'Дудник Лекарственный', 'Мать-И-Мачеха Обыкновенная', 'Плаун Булавовидный', 'Репешок Обыкновенный', 'Ромашка Безъязычковая', 'Тимьян Ползучий']<br>             <b>Region:</b> Владимирская область         </div>         </div>`)[0];
+                popup_7946c08d24fc0fd1738a4a68c8fa343c.setContent(html_3f6eef45fec4ff35883be14a9ea70baf);
+            
+        
+
+        marker_870e95ea6b04f4904664f661c4504571.bindPopup(popup_7946c08d24fc0fd1738a4a68c8fa343c)
+        ;
+
+        
+    
+    
+            var marker_a593e97e579193f6c941a0fc501d8b60 = L.marker(
+                [56.001251, 92.88559],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_a1d43026540a22f64a610173555dec98 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6389ddcbebbd5b6464ebb63524275525 = $(`<div id="html_6389ddcbebbd5b6464ebb63524275525" style="width: 100.0%; height: 100.0%;">Красноярский край</div>`)[0];
+                popup_a1d43026540a22f64a610173555dec98.setContent(html_6389ddcbebbd5b6464ebb63524275525);
+            
+        
+
+        marker_a593e97e579193f6c941a0fc501d8b60.bindPopup(popup_a1d43026540a22f64a610173555dec98)
+        ;
+
+        
+    
+    
+        var popup_8f329f2339c4b49b3206ee2317daf48c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b355b1f13228c532cea84946507d45ee = $(`<div id="html_b355b1f13228c532cea84946507d45ee" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Баранец Обыкновенный', 'Бессмертник Песчаный', 'Вздутоплодник Сибирский', 'Горец Перечный', 'Горец Почечуйный', 'Дурман Обыкновенный', 'Желтушник Раскидистый', 'Истод Тонколистный', 'Копеечник Альпийский', 'Крапива Двудомная', 'Крушина Ольховидная', 'Кубышка Жёлтая', 'Лабазник Обыкновенный', 'Мать-И-Мачеха Обыкновенная', 'Одуванчик Изогнутый', 'Пион Уклоняющийся', 'Плаун Булавовидный', 'Пустырник Сердечный', 'Репешок Волосистый', 'Родиола Розовая', 'Ромашка Безъязычковая', 'Синюха Голубая', 'Термопсис Ланцетовидный', 'Толокнянка Обыкновенная', 'Фиалка Трёхцветная', 'Хмель Обыкновенный', 'Чемерица Лобеля', 'Череда Трёхраздельная', 'Щитовник Мужской']<br>             <b>Region:</b> Красноярский край         </div>         </div>`)[0];
+                popup_8f329f2339c4b49b3206ee2317daf48c.setContent(html_b355b1f13228c532cea84946507d45ee);
+            
+        
+
+        marker_a593e97e579193f6c941a0fc501d8b60.bindPopup(popup_8f329f2339c4b49b3206ee2317daf48c)
+        ;
+
+        
+    
+    
+            var marker_c42c480924859c08eff52f25342f52d0 = L.marker(
+                [55.796539, 49.1082],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_1a2d84b699fe912207b85672180d3840 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0cf227bd8210f14cb79df87b49b72806 = $(`<div id="html_0cf227bd8210f14cb79df87b49b72806" style="width: 100.0%; height: 100.0%;">Татарстан</div>`)[0];
+                popup_1a2d84b699fe912207b85672180d3840.setContent(html_0cf227bd8210f14cb79df87b49b72806);
+            
+        
+
+        marker_c42c480924859c08eff52f25342f52d0.bindPopup(popup_1a2d84b699fe912207b85672180d3840)
+        ;
+
+        
+    
+    
+        var popup_76594422ba127517d8c4b88369e874a5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_549b45ff3606bfe3ba2a06f878a00ec0 = $(`<div id="html_549b45ff3606bfe3ba2a06f878a00ec0" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Бархат Амурский', 'Бессмертник Песчаный', 'Боярышник Кроваво-Красный', 'Горицвет Весенний', 'Девясил Высокий', 'Дурман Обыкновенный', 'Дудник Лекарственный', 'Змееголовник Молдавский', 'Плаун Булавовидный', 'Свободноягодник Колючий', 'Тимьян Ползучий', 'Черника Обыкновенная']<br>             <b>Region:</b> Татарстан         </div>         </div>`)[0];
+                popup_76594422ba127517d8c4b88369e874a5.setContent(html_549b45ff3606bfe3ba2a06f878a00ec0);
+            
+        
+
+        marker_c42c480924859c08eff52f25342f52d0.bindPopup(popup_76594422ba127517d8c4b88369e874a5)
+        ;
+
+        
+    
+    
+            var marker_f20ce13586cd740ef36d9547fa7b2e0b = L.marker(
+                [55.755787, 37.617634],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_3f711d48ce04b472e8eea222c4fa120c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f8c25e2a969b2dc68c833f21d6c4aee2 = $(`<div id="html_f8c25e2a969b2dc68c833f21d6c4aee2" style="width: 100.0%; height: 100.0%;">Москва</div>`)[0];
+                popup_3f711d48ce04b472e8eea222c4fa120c.setContent(html_f8c25e2a969b2dc68c833f21d6c4aee2);
+            
+        
+
+        marker_f20ce13586cd740ef36d9547fa7b2e0b.bindPopup(popup_3f711d48ce04b472e8eea222c4fa120c)
+        ;
+
+        
+    
+    
+        var popup_746431c44297f5d27179e426867c2ef2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7bbae13b0eb976f91c8137140609aff1 = $(`<div id="html_7bbae13b0eb976f91c8137140609aff1" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Бархат Амурский', 'Лабазник Обыкновенный', 'Плаун Булавовидный', 'Тимьян Ползучий']<br>             <b>Region:</b> Москва         </div>         </div>`)[0];
+                popup_746431c44297f5d27179e426867c2ef2.setContent(html_7bbae13b0eb976f91c8137140609aff1);
+            
+        
+
+        marker_f20ce13586cd740ef36d9547fa7b2e0b.bindPopup(popup_746431c44297f5d27179e426867c2ef2)
+        ;
+
+        
+    
+    
+            var marker_11c61a43bde1e244ce8c897903c2b209 = L.marker(
+                [55.755787, 37.617634],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_7895c6639ad9e574e32f1e0c66b57c26 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a32913dc83d4e9932860234fbc7effd = $(`<div id="html_1a32913dc83d4e9932860234fbc7effd" style="width: 100.0%; height: 100.0%;">Московская область</div>`)[0];
+                popup_7895c6639ad9e574e32f1e0c66b57c26.setContent(html_1a32913dc83d4e9932860234fbc7effd);
+            
+        
+
+        marker_11c61a43bde1e244ce8c897903c2b209.bindPopup(popup_7895c6639ad9e574e32f1e0c66b57c26)
+        ;
+
+        
+    
+    
+        var popup_8587daae896f3f0d1a4290254e050eb0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_31384712a6fc0eb14f8127a379e58125 = $(`<div id="html_31384712a6fc0eb14f8127a379e58125" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Барбарис Обыкновенный', 'Бессмертник Песчаный', 'Боярышник Кроваво-Красный', 'Горицвет Весенний', 'Дурман Обыкновенный', 'Дудник Лекарственный', 'Копеечник Альпийский', 'Коровяк Густоцветковый', 'Кровохлёбка Лекарственная', 'Подофилл Щитовидный', 'Ревень Пальчатый Тангутский', 'Репешок Обыкновенный', 'Толокнянка Обыкновенная']<br>             <b>Region:</b> Московская область         </div>         </div>`)[0];
+                popup_8587daae896f3f0d1a4290254e050eb0.setContent(html_31384712a6fc0eb14f8127a379e58125);
+            
+        
+
+        marker_11c61a43bde1e244ce8c897903c2b209.bindPopup(popup_8587daae896f3f0d1a4290254e050eb0)
+        ;
+
+        
+    
+    
+            var marker_dc9331b2dad19eb7b15b1317fdc27369 = L.marker(
+                [55.45369, 65.342323],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_a9e004199d36e61ccee48805a71bd41e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8e97b3605be4174350953cf7312de651 = $(`<div id="html_8e97b3605be4174350953cf7312de651" style="width: 100.0%; height: 100.0%;">Курганская область</div>`)[0];
+                popup_a9e004199d36e61ccee48805a71bd41e.setContent(html_8e97b3605be4174350953cf7312de651);
+            
+        
+
+        marker_dc9331b2dad19eb7b15b1317fdc27369.bindPopup(popup_a9e004199d36e61ccee48805a71bd41e)
+        ;
+
+        
+    
+    
+        var popup_8f18a2e65e00f791ebfd7cd589b6d9fe = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_05fc384bf9d72d30ea1376f0dd8d3455 = $(`<div id="html_05fc384bf9d72d30ea1376f0dd8d3455" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Бессмертник Песчаный', 'Пион Уклоняющийся', 'Репешок Волосистый', 'Синюха Голубая', 'Чемерица Лобеля']<br>             <b>Region:</b> Курганская область         </div>         </div>`)[0];
+                popup_8f18a2e65e00f791ebfd7cd589b6d9fe.setContent(html_05fc384bf9d72d30ea1376f0dd8d3455);
+            
+        
+
+        marker_dc9331b2dad19eb7b15b1317fdc27369.bindPopup(popup_8f18a2e65e00f791ebfd7cd589b6d9fe)
+        ;
+
+        
+    
+    
+            var marker_9c23c77bffc0ca03fce1e5a4ca4ef3f1 = L.marker(
+                [55.371239, 86.052437],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_724fc0f42d9fd88e2f694361da04bef7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e60f75baf870a91c147b31b5f36097aa = $(`<div id="html_e60f75baf870a91c147b31b5f36097aa" style="width: 100.0%; height: 100.0%;">Кемеровская область</div>`)[0];
+                popup_724fc0f42d9fd88e2f694361da04bef7.setContent(html_e60f75baf870a91c147b31b5f36097aa);
+            
+        
+
+        marker_9c23c77bffc0ca03fce1e5a4ca4ef3f1.bindPopup(popup_724fc0f42d9fd88e2f694361da04bef7)
+        ;
+
+        
+    
+    
+        var popup_8266d84fe3b964b698da26947ac12751 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2b2498fb031d64b00cf4e5d3bd1cade8 = $(`<div id="html_2b2498fb031d64b00cf4e5d3bd1cade8" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Алтей Лекарственный', 'Баранец Обыкновенный', 'Бессмертник Песчаный', 'Борец Северный', 'Копытень Европейский', 'Пион Уклоняющийся', 'Репешок Волосистый', 'Родиола Розовая', 'Синюха Голубая', 'Фиалка Трёхцветная', 'Щавель Конский']<br>             <b>Region:</b> Кемеровская область         </div>         </div>`)[0];
+                popup_8266d84fe3b964b698da26947ac12751.setContent(html_2b2498fb031d64b00cf4e5d3bd1cade8);
+            
+        
+
+        marker_9c23c77bffc0ca03fce1e5a4ca4ef3f1.bindPopup(popup_8266d84fe3b964b698da26947ac12751)
+        ;
+
+        
+    
+    
+            var marker_a108b2157a6a2c5299c887b55b4e1d1a = L.marker(
+                [55.159889, 61.40258],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_e0d1488b5e9613e9ee5ac9317332d2a3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d26e5d651665c4c146175fbc12e59d21 = $(`<div id="html_d26e5d651665c4c146175fbc12e59d21" style="width: 100.0%; height: 100.0%;">Челябинская область</div>`)[0];
+                popup_e0d1488b5e9613e9ee5ac9317332d2a3.setContent(html_d26e5d651665c4c146175fbc12e59d21);
+            
+        
+
+        marker_a108b2157a6a2c5299c887b55b4e1d1a.bindPopup(popup_e0d1488b5e9613e9ee5ac9317332d2a3)
+        ;
+
+        
+    
+    
+        var popup_edb91e26e9d97c2d97aba2fe79493d20 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_cb72905c3e0283de2ca0e46393ab7497 = $(`<div id="html_cb72905c3e0283de2ca0e46393ab7497" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Бессмертник Песчаный', 'Горец Змеиный', 'Горец Перечный', 'Дудник Лекарственный', 'Малина Обыкновенная', 'Мать-И-Мачеха Обыкновенная', 'Можжевельник Обыкновенный', 'Наперстянка Крупноцветковая', 'Ольха Чёрная', 'Пион Уклоняющийся', 'Плаун Булавовидный', 'Репешок Обыкновенный', 'Ромашка Безъязычковая', 'Толокнянка Обыкновенная', 'Фиалка Трёхцветная', 'Черника Обыкновенная']<br>             <b>Region:</b> Челябинская область         </div>         </div>`)[0];
+                popup_edb91e26e9d97c2d97aba2fe79493d20.setContent(html_cb72905c3e0283de2ca0e46393ab7497);
+            
+        
+
+        marker_a108b2157a6a2c5299c887b55b4e1d1a.bindPopup(popup_edb91e26e9d97c2d97aba2fe79493d20)
+        ;
+
+        
+    
+    
+            var marker_5b340bcdeca9d2dad21d849dc54f4619 = L.marker(
+                [55.03923, 82.927818],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_ba038788af68793a9ca0a00a9fc1d04b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e815f23aa055be1e1e969d9769540f57 = $(`<div id="html_e815f23aa055be1e1e969d9769540f57" style="width: 100.0%; height: 100.0%;">Новосибирская область</div>`)[0];
+                popup_ba038788af68793a9ca0a00a9fc1d04b.setContent(html_e815f23aa055be1e1e969d9769540f57);
+            
+        
+
+        marker_5b340bcdeca9d2dad21d849dc54f4619.bindPopup(popup_ba038788af68793a9ca0a00a9fc1d04b)
+        ;
+
+        
+    
+    
+        var popup_56b8c1edd06d35b37efe1b79a7e24bfd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2a2893dc295ed1819494d3dbf1f4f541 = $(`<div id="html_2a2893dc295ed1819494d3dbf1f4f541" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Багульник Болотный', 'Бессмертник Песчаный', 'Борец Северный', 'Боярышник Кроваво-Красный', 'Горец Почечуйный', 'Желтушник Раскидистый', 'Пион Уклоняющийся', 'Плаун Булавовидный', 'Ревень Пальчатый Тангутский', 'Репешок Волосистый', 'Родиола Розовая', 'Синюха Голубая', 'Термопсис Ланцетовидный', 'Тимьян Ползучий', 'Толокнянка Обыкновенная', 'Черника Обыкновенная']<br>             <b>Region:</b> Новосибирская область         </div>         </div>`)[0];
+                popup_56b8c1edd06d35b37efe1b79a7e24bfd.setContent(html_2a2893dc295ed1819494d3dbf1f4f541);
+            
+        
+
+        marker_5b340bcdeca9d2dad21d849dc54f4619.bindPopup(popup_56b8c1edd06d35b37efe1b79a7e24bfd)
+        ;
+
+        
+    
+    
+            var marker_ec7a9ea1ae1ad10d52224d977d332e7a = L.marker(
+                [54.970901, 73.393753],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_ddcd95d0254655562b8ff56450ac961f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8d86cc54b13dc299480669a83524005b = $(`<div id="html_8d86cc54b13dc299480669a83524005b" style="width: 100.0%; height: 100.0%;">Омская область</div>`)[0];
+                popup_ddcd95d0254655562b8ff56450ac961f.setContent(html_8d86cc54b13dc299480669a83524005b);
+            
+        
+
+        marker_ec7a9ea1ae1ad10d52224d977d332e7a.bindPopup(popup_ddcd95d0254655562b8ff56450ac961f)
+        ;
+
+        
+    
+    
+        var popup_27cd2a61320d943d8a436afb0c1bb6fe = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ff97c9cecbee73bf2073b4f417e33537 = $(`<div id="html_ff97c9cecbee73bf2073b4f417e33537" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Багульник Болотный', 'Борец Северный', 'Брусника Обыкновенная', 'Дурман Обыкновенный', 'Желтушник Раскидистый', 'Жостер Слабительный', 'Лапчатка Прямостоячая', 'Малина Обыкновенная', 'Мать-И-Мачеха Обыкновенная', 'Можжевельник Обыкновенный', 'Пион Уклоняющийся', 'Репешок Волосистый', 'Синюха Голубая', 'Тмин Обыкновенный', 'Черника Обыкновенная']<br>             <b>Region:</b> Омская область         </div>         </div>`)[0];
+                popup_27cd2a61320d943d8a436afb0c1bb6fe.setContent(html_ff97c9cecbee73bf2073b4f417e33537);
+            
+        
+
+        marker_ec7a9ea1ae1ad10d52224d977d332e7a.bindPopup(popup_27cd2a61320d943d8a436afb0c1bb6fe)
+        ;
+
+        
+    
+    
+            var marker_fabd011bbf769b6f697fe0ee1e7f81f3 = L.marker(
+                [54.781101, 32.048889],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_dd5a4f18d47daa8d2ba7852bc8991630 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e7716162bf79af616220339c51b7bb9c = $(`<div id="html_e7716162bf79af616220339c51b7bb9c" style="width: 100.0%; height: 100.0%;">Смоленская область</div>`)[0];
+                popup_dd5a4f18d47daa8d2ba7852bc8991630.setContent(html_e7716162bf79af616220339c51b7bb9c);
+            
+        
+
+        marker_fabd011bbf769b6f697fe0ee1e7f81f3.bindPopup(popup_dd5a4f18d47daa8d2ba7852bc8991630)
+        ;
+
+        
+    
+    
+        var popup_dd31c6a8faef014ea6697193481c8e36 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_dc7be31dfe2ccb48754e76eff263de39 = $(`<div id="html_dc7be31dfe2ccb48754e76eff263de39" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Борец Северный', 'Дудник Лекарственный', 'Змееголовник Молдавский', 'Коровяк Густоцветковый', 'Кровохлёбка Лекарственная', 'Наперстянка Крупноцветковая', 'Репешок Обыкновенный', 'Толокнянка Обыкновенная', 'Чемерица Лобеля']<br>             <b>Region:</b> Смоленская область         </div>         </div>`)[0];
+                popup_dd31c6a8faef014ea6697193481c8e36.setContent(html_dc7be31dfe2ccb48754e76eff263de39);
+            
+        
+
+        marker_fabd011bbf769b6f697fe0ee1e7f81f3.bindPopup(popup_dd31c6a8faef014ea6697193481c8e36)
+        ;
+
+        
+    
+    
+            var marker_999b26c8e48b00c27f7c39e57305f224 = L.marker(
+                [54.7355, 55.991982],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_d45c0eb2fdfd60b3d5a3799481f64988 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_30c94dc4bd8b76d8c8e9f504501173dd = $(`<div id="html_30c94dc4bd8b76d8c8e9f504501173dd" style="width: 100.0%; height: 100.0%;">Башкортостан</div>`)[0];
+                popup_d45c0eb2fdfd60b3d5a3799481f64988.setContent(html_30c94dc4bd8b76d8c8e9f504501173dd);
+            
+        
+
+        marker_999b26c8e48b00c27f7c39e57305f224.bindPopup(popup_d45c0eb2fdfd60b3d5a3799481f64988)
+        ;
+
+        
+    
+    
+        var popup_4cf12a0943f487e607ff2b13dee19d30 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4567cbb2d602c9e81e1ac17c6d31739d = $(`<div id="html_4567cbb2d602c9e81e1ac17c6d31739d" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Девясил Высокий', 'Дудник Лекарственный', 'Наперстянка Крупноцветковая', 'Пион Уклоняющийся', 'Родиола Розовая', 'Сушеница Топяная']<br>             <b>Region:</b> Башкортостан         </div>         </div>`)[0];
+                popup_4cf12a0943f487e607ff2b13dee19d30.setContent(html_4567cbb2d602c9e81e1ac17c6d31739d);
+            
+        
+
+        marker_999b26c8e48b00c27f7c39e57305f224.bindPopup(popup_4cf12a0943f487e607ff2b13dee19d30)
+        ;
+
+        
+    
+    
+            var marker_fe1023c1c5dcfc7fcc821da3bf2d9578 = L.marker(
+                [54.711594, 20.509972],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_425b14ded9e64743f2bc4e5c8467c6c5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_379808ddc9ffb3957d25d1409bf2cdce = $(`<div id="html_379808ddc9ffb3957d25d1409bf2cdce" style="width: 100.0%; height: 100.0%;">Калининградская область</div>`)[0];
+                popup_425b14ded9e64743f2bc4e5c8467c6c5.setContent(html_379808ddc9ffb3957d25d1409bf2cdce);
+            
+        
+
+        marker_fe1023c1c5dcfc7fcc821da3bf2d9578.bindPopup(popup_425b14ded9e64743f2bc4e5c8467c6c5)
+        ;
+
+        
+    
+    
+        var popup_551b1722d6e5544a7393ff4d80e0e736 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_057638a36db3bbcf035106cc769fcdc0 = $(`<div id="html_057638a36db3bbcf035106cc769fcdc0" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Бедренец Камнеломка', 'Вербена Лекарственная', 'Змееголовник Молдавский', 'Калина Обыкновенная', 'Ломонос Виноградолистный', 'Наперстянка Крупноцветковая', 'Облепиха Крушиновидная', 'Очиток Большой', 'Чемерица Лобеля']<br>             <b>Region:</b> Калининградская область         </div>         </div>`)[0];
+                popup_551b1722d6e5544a7393ff4d80e0e736.setContent(html_057638a36db3bbcf035106cc769fcdc0);
+            
+        
+
+        marker_fe1023c1c5dcfc7fcc821da3bf2d9578.bindPopup(popup_551b1722d6e5544a7393ff4d80e0e736)
+        ;
+
+        
+    
+    
+            var marker_80cd19b914e13b30598e2b8574028b29 = L.marker(
+                [54.62466, 39.738571],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_1bbc4b60846beed224b0bf1123e6062c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd6fad29873ab633710bbf0e1ff5ad78 = $(`<div id="html_cd6fad29873ab633710bbf0e1ff5ad78" style="width: 100.0%; height: 100.0%;">Рязанская область</div>`)[0];
+                popup_1bbc4b60846beed224b0bf1123e6062c.setContent(html_cd6fad29873ab633710bbf0e1ff5ad78);
+            
+        
+
+        marker_80cd19b914e13b30598e2b8574028b29.bindPopup(popup_1bbc4b60846beed224b0bf1123e6062c)
+        ;
+
+        
+    
+    
+        var popup_3ff7463f8cf1a1977e558c12ef61fb26 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e717cbd55c1dad79c96780d546e4777a = $(`<div id="html_e717cbd55c1dad79c96780d546e4777a" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Боярышник Кроваво-Красный', 'Горицвет Весенний', 'Дурман Обыкновенный', 'Дудник Лекарственный', 'Змееголовник Молдавский', 'Толокнянка Обыкновенная']<br>             <b>Region:</b> Рязанская область         </div>         </div>`)[0];
+                popup_3ff7463f8cf1a1977e558c12ef61fb26.setContent(html_e717cbd55c1dad79c96780d546e4777a);
+            
+        
+
+        marker_80cd19b914e13b30598e2b8574028b29.bindPopup(popup_3ff7463f8cf1a1977e558c12ef61fb26)
+        ;
+
+        
+    
+    
+            var marker_5cc9454b690e2e4e342e352a5908be3b = L.marker(
+                [54.514679, 36.27142],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_e2da17d8cc00ebe89a9045646fdcefab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e026ba77c19f9c8045d4559558c71056 = $(`<div id="html_e026ba77c19f9c8045d4559558c71056" style="width: 100.0%; height: 100.0%;">Калужская область</div>`)[0];
+                popup_e2da17d8cc00ebe89a9045646fdcefab.setContent(html_e026ba77c19f9c8045d4559558c71056);
+            
+        
+
+        marker_5cc9454b690e2e4e342e352a5908be3b.bindPopup(popup_e2da17d8cc00ebe89a9045646fdcefab)
+        ;
+
+        
+    
+    
+        var popup_2a61a69c2cab2f6b44420af78d3680ed = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_72c7b0f28ea42f13fe07ceabd32c222c = $(`<div id="html_72c7b0f28ea42f13fe07ceabd32c222c" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Борец Северный', 'Дурман Обыкновенный', 'Дудник Лекарственный', 'Репешок Обыкновенный', 'Толокнянка Обыкновенная']<br>             <b>Region:</b> Калужская область         </div>         </div>`)[0];
+                popup_2a61a69c2cab2f6b44420af78d3680ed.setContent(html_72c7b0f28ea42f13fe07ceabd32c222c);
+            
+        
+
+        marker_5cc9454b690e2e4e342e352a5908be3b.bindPopup(popup_2a61a69c2cab2f6b44420af78d3680ed)
+        ;
+
+        
+    
+    
+            var marker_38c9c0ca7a4a3fe042b4d0b7ea37892a = L.marker(
+                [54.32148, 48.385651],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_b2048b591a4eee0be9375dab3109a054 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7d9bf5369813880262f72d9d39e2b1cb = $(`<div id="html_7d9bf5369813880262f72d9d39e2b1cb" style="width: 100.0%; height: 100.0%;">Ульяновская область</div>`)[0];
+                popup_b2048b591a4eee0be9375dab3109a054.setContent(html_7d9bf5369813880262f72d9d39e2b1cb);
+            
+        
+
+        marker_38c9c0ca7a4a3fe042b4d0b7ea37892a.bindPopup(popup_b2048b591a4eee0be9375dab3109a054)
+        ;
+
+        
+    
+    
+        var popup_babcc1374d3c19f110fd806a09e295aa = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_edc265e36a62c620610e6bbf87df3ff6 = $(`<div id="html_edc265e36a62c620610e6bbf87df3ff6" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Дудник Лекарственный', 'Змееголовник Молдавский', 'Плаун Булавовидный', 'Тимьян Ползучий']<br>             <b>Region:</b> Ульяновская область         </div>         </div>`)[0];
+                popup_babcc1374d3c19f110fd806a09e295aa.setContent(html_edc265e36a62c620610e6bbf87df3ff6);
+            
+        
+
+        marker_38c9c0ca7a4a3fe042b4d0b7ea37892a.bindPopup(popup_babcc1374d3c19f110fd806a09e295aa)
+        ;
+
+        
+    
+    
+            var marker_9b87efefb56c735c37ab2c7b52717bb4 = L.marker(
+                [54.196678, 37.617828],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_c6dbcc35e3d36bd4fe6e44472f9e1766 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_adcffe88e0c8ba9c499bce9fe673adc9 = $(`<div id="html_adcffe88e0c8ba9c499bce9fe673adc9" style="width: 100.0%; height: 100.0%;">Тульская область</div>`)[0];
+                popup_c6dbcc35e3d36bd4fe6e44472f9e1766.setContent(html_adcffe88e0c8ba9c499bce9fe673adc9);
+            
+        
+
+        marker_9b87efefb56c735c37ab2c7b52717bb4.bindPopup(popup_c6dbcc35e3d36bd4fe6e44472f9e1766)
+        ;
+
+        
+    
+    
+        var popup_9d251da85d865347c24fe49122fc567e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f724fe7ebd66d20d6a27b6ba136cb5f6 = $(`<div id="html_f724fe7ebd66d20d6a27b6ba136cb5f6" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Борец Северный', 'Дудник Лекарственный', 'Змееголовник Молдавский', 'Коровяк Густоцветковый', 'Наперстянка Крупноцветковая', 'Плаун Булавовидный']<br>             <b>Region:</b> Тульская область         </div>         </div>`)[0];
+                popup_9d251da85d865347c24fe49122fc567e.setContent(html_f724fe7ebd66d20d6a27b6ba136cb5f6);
+            
+        
+
+        marker_9b87efefb56c735c37ab2c7b52717bb4.bindPopup(popup_9d251da85d865347c24fe49122fc567e)
+        ;
+
+        
+    
+    
+            var marker_ee0cca4c0b41de22fdc0ab2fea072826 = L.marker(
+                [54.181381, 45.17569],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_ff254e5461b51cd0b7d26028da914f56 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9547b09c29251eda28b791f4422156f2 = $(`<div id="html_9547b09c29251eda28b791f4422156f2" style="width: 100.0%; height: 100.0%;">Мордовия</div>`)[0];
+                popup_ff254e5461b51cd0b7d26028da914f56.setContent(html_9547b09c29251eda28b791f4422156f2);
+            
+        
+
+        marker_ee0cca4c0b41de22fdc0ab2fea072826.bindPopup(popup_ff254e5461b51cd0b7d26028da914f56)
+        ;
+
+        
+    
+    
+        var popup_92a154d0246e06e93ea8e6e52af77f6d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c7fa679a618097ae91d9ae95afed94f5 = $(`<div id="html_c7fa679a618097ae91d9ae95afed94f5" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Боярышник Кроваво-Красный', 'Дудник Лекарственный', 'Змееголовник Молдавский', 'Переступень Белый']<br>             <b>Region:</b> Мордовия         </div>         </div>`)[0];
+                popup_92a154d0246e06e93ea8e6e52af77f6d.setContent(html_c7fa679a618097ae91d9ae95afed94f5);
+            
+        
+
+        marker_ee0cca4c0b41de22fdc0ab2fea072826.bindPopup(popup_92a154d0246e06e93ea8e6e52af77f6d)
+        ;
+
+        
+    
+    
+            var marker_2c6161f0a57a76423427acaddbb5da53 = L.marker(
+                [53.729172, 91.461189],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_a232953f7e76e39f4ca6a3059be6b009 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f338dc632f604df713089ab9a4581db9 = $(`<div id="html_f338dc632f604df713089ab9a4581db9" style="width: 100.0%; height: 100.0%;">Хакасия</div>`)[0];
+                popup_a232953f7e76e39f4ca6a3059be6b009.setContent(html_f338dc632f604df713089ab9a4581db9);
+            
+        
+
+        marker_2c6161f0a57a76423427acaddbb5da53.bindPopup(popup_a232953f7e76e39f4ca6a3059be6b009)
+        ;
+
+        
+    
+    
+        var popup_2a9cb5065ad4622728ebba03d095bd91 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bf8b336d31a952c3f6ccb7ecfd3e57f7 = $(`<div id="html_bf8b336d31a952c3f6ccb7ecfd3e57f7" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Бессмертник Песчаный', 'Вздутоплодник Сибирский', 'Истод Тонколистный', 'Пион Уклоняющийся', 'Пустырник Сердечный', 'Репешок Волосистый', 'Родиола Розовая']<br>             <b>Region:</b> Хакасия         </div>         </div>`)[0];
+                popup_2a9cb5065ad4622728ebba03d095bd91.setContent(html_bf8b336d31a952c3f6ccb7ecfd3e57f7);
+            
+        
+
+        marker_2c6161f0a57a76423427acaddbb5da53.bindPopup(popup_2a9cb5065ad4622728ebba03d095bd91)
+        ;
+
+        
+    
+    
+            var marker_c144231eceaf9d13a9a52df2a4cfbe87 = L.marker(
+                [53.356339, 83.76165],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_77b636d99d6ebcff004a7c29baaf169c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c654f2b3b25a33ce6c09779292da55fb = $(`<div id="html_c654f2b3b25a33ce6c09779292da55fb" style="width: 100.0%; height: 100.0%;">Алтайский край</div>`)[0];
+                popup_77b636d99d6ebcff004a7c29baaf169c.setContent(html_c654f2b3b25a33ce6c09779292da55fb);
+            
+        
+
+        marker_c144231eceaf9d13a9a52df2a4cfbe87.bindPopup(popup_77b636d99d6ebcff004a7c29baaf169c)
+        ;
+
+        
+    
+    
+            var marker_53589d209573ca2dae8499fbf20ec645 = L.marker(
+                [53.310661, 34.300369],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_f123074d03847ac6b586c555566ccfc3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_47efd2e6b12e01699d5ccbff5cd4ab55 = $(`<div id="html_47efd2e6b12e01699d5ccbff5cd4ab55" style="width: 100.0%; height: 100.0%;">Брянская область</div>`)[0];
+                popup_f123074d03847ac6b586c555566ccfc3.setContent(html_47efd2e6b12e01699d5ccbff5cd4ab55);
+            
+        
+
+        marker_53589d209573ca2dae8499fbf20ec645.bindPopup(popup_f123074d03847ac6b586c555566ccfc3)
+        ;
+
+        
+    
+    
+        var popup_de18c6ee9cec8a1980021b66d0ef64ae = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a2e257531b076cb024f5be6d21ff1fe9 = $(`<div id="html_a2e257531b076cb024f5be6d21ff1fe9" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Алтей Лекарственный', 'Борец Северный', 'Бузина Черная', 'Дудник Лекарственный', 'Ель Обыкновенная', 'Змееголовник Молдавский', 'Коровяк Густоцветковый', 'Наперстянка Крупноцветковая', 'Репешок Обыкновенный', 'Тимьян Ползучий', 'Толокнянка Обыкновенная']<br>             <b>Region:</b> Брянская область         </div>         </div>`)[0];
+                popup_de18c6ee9cec8a1980021b66d0ef64ae.setContent(html_a2e257531b076cb024f5be6d21ff1fe9);
+            
+        
+
+        marker_53589d209573ca2dae8499fbf20ec645.bindPopup(popup_de18c6ee9cec8a1980021b66d0ef64ae)
+        ;
+
+        
+    
+    
+            var marker_33db3cd0538116343ca637dd42a659db = L.marker(
+                [53.20216, 50.159618],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_a03f484b2cec56ff70c8b8e5d3d83199 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_02051845d59bc1fd1e3fde79dc8addcf = $(`<div id="html_02051845d59bc1fd1e3fde79dc8addcf" style="width: 100.0%; height: 100.0%;">Самарская область</div>`)[0];
+                popup_a03f484b2cec56ff70c8b8e5d3d83199.setContent(html_02051845d59bc1fd1e3fde79dc8addcf);
+            
+        
+
+        marker_33db3cd0538116343ca637dd42a659db.bindPopup(popup_a03f484b2cec56ff70c8b8e5d3d83199)
+        ;
+
+        
+    
+    
+        var popup_85ce6bdb3913d6f890e6e94c1b2a55a0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_952da0891208147058315a4a2f2055f3 = $(`<div id="html_952da0891208147058315a4a2f2055f3" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Алоэ Древовидное', 'Багульник Болотный', 'Барбарис Обыкновенный', 'Борец Северный', 'Боярышник Кроваво-Красный', 'Гармала Обыкновенная', 'Горицвет Весенний', 'Дуб Обыкновенный', 'Дурман Обыкновенный', 'Змееголовник Молдавский', 'Лапчатка Прямостоячая', 'Лапчатка Серебристая', 'Липа Сердцевидная', 'Можжевельник Обыкновенный', 'Морковь Дикая', 'Мята Перечная', 'Ольха Чёрная', 'Плаун Булавовидный', 'Ромашка Безъязычковая', 'Рябина Обыкновенная', 'Толокнянка Обыкновенная', 'Фиалка Трёхцветная', 'Черника Обыкновенная', 'Щитовник Мужской']<br>             <b>Region:</b> Самарская область         </div>         </div>`)[0];
+                popup_85ce6bdb3913d6f890e6e94c1b2a55a0.setContent(html_952da0891208147058315a4a2f2055f3);
+            
+        
+
+        marker_33db3cd0538116343ca637dd42a659db.bindPopup(popup_85ce6bdb3913d6f890e6e94c1b2a55a0)
+        ;
+
+        
+    
+    
+            var marker_be43f32a63e9a5b31f90caebb604113e = L.marker(
+                [53.200932, 45.010422],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_a41fc02623e9ef50fe1e72711c73535d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_20a6a2051d4468d379ff206d41594c4f = $(`<div id="html_20a6a2051d4468d379ff206d41594c4f" style="width: 100.0%; height: 100.0%;">Пензенская область</div>`)[0];
+                popup_a41fc02623e9ef50fe1e72711c73535d.setContent(html_20a6a2051d4468d379ff206d41594c4f);
+            
+        
+
+        marker_be43f32a63e9a5b31f90caebb604113e.bindPopup(popup_a41fc02623e9ef50fe1e72711c73535d)
+        ;
+
+        
+    
+    
+        var popup_471885fff8efbf5ed3e280ed6a3f588a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_418f551f72ec674a1ce800892deda16c = $(`<div id="html_418f551f72ec674a1ce800892deda16c" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Барбарис Обыкновенный', 'Боярышник Кроваво-Красный', 'Дудник Лекарственный', 'Змееголовник Молдавский', 'Наперстянка Крупноцветковая', 'Плаун Булавовидный']<br>             <b>Region:</b> Пензенская область         </div>         </div>`)[0];
+                popup_471885fff8efbf5ed3e280ed6a3f588a.setContent(html_418f551f72ec674a1ce800892deda16c);
+            
+        
+
+        marker_be43f32a63e9a5b31f90caebb604113e.bindPopup(popup_471885fff8efbf5ed3e280ed6a3f588a)
+        ;
+
+        
+    
+    
+            var marker_636ed70e31ac5b19a487f3c26c64452a = L.marker(
+                [53.061562, 158.622482],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_9680465520e4d2ae11c7364f2f3afb6f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_422f0037f4e3a34d33b784350bef075b = $(`<div id="html_422f0037f4e3a34d33b784350bef075b" style="width: 100.0%; height: 100.0%;">Камчатский край</div>`)[0];
+                popup_9680465520e4d2ae11c7364f2f3afb6f.setContent(html_422f0037f4e3a34d33b784350bef075b);
+            
+        
+
+        marker_636ed70e31ac5b19a487f3c26c64452a.bindPopup(popup_9680465520e4d2ae11c7364f2f3afb6f)
+        ;
+
+        
+    
+    
+        var popup_733c49ae10452ae4b6e826f2de3e5ea0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e3f6de092aebb01281ad46075d046488 = $(`<div id="html_e3f6de092aebb01281ad46075d046488" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Баранец Обыкновенный', 'Брусника Обыкновенная', 'Горец Перечный', 'Горец Почечуйный', 'Горец Птичий', 'Кровохлёбка Лекарственная', 'Пастушья Сумка Обыкновенная', 'Плаун Булавовидный', 'Подорожник Большой', 'Родиола Розовая', 'Ромашка Безъязычковая', 'Тмин Обыкновенный', 'Черёмуха Обыкновенная', 'Шиповник Майский']<br>             <b>Region:</b> Камчатский край         </div>         </div>`)[0];
+                popup_733c49ae10452ae4b6e826f2de3e5ea0.setContent(html_e3f6de092aebb01281ad46075d046488);
+            
+        
+
+        marker_636ed70e31ac5b19a487f3c26c64452a.bindPopup(popup_733c49ae10452ae4b6e826f2de3e5ea0)
+        ;
+
+        
+    
+    
+            var marker_42ce87ffeb3ff5b44ceb17e44fcbe3dc = L.marker(
+                [52.968452, 36.069492],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_652f21adc45df3be8fdf86317cda9a53 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a2597623a27669e3b3e9935bac8ee149 = $(`<div id="html_a2597623a27669e3b3e9935bac8ee149" style="width: 100.0%; height: 100.0%;">Орловская область</div>`)[0];
+                popup_652f21adc45df3be8fdf86317cda9a53.setContent(html_a2597623a27669e3b3e9935bac8ee149);
+            
+        
+
+        marker_42ce87ffeb3ff5b44ceb17e44fcbe3dc.bindPopup(popup_652f21adc45df3be8fdf86317cda9a53)
+        ;
+
+        
+    
+    
+        var popup_1879a28a030c343cab2cfba3ea758ed3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_80432024d68a36e488b51bd253c10ccc = $(`<div id="html_80432024d68a36e488b51bd253c10ccc" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Бузина Черная', 'Дудник Лекарственный', 'Змееголовник Молдавский', 'Коровяк Густоцветковый', 'Наперстянка Крупноцветковая']<br>             <b>Region:</b> Орловская область         </div>         </div>`)[0];
+                popup_1879a28a030c343cab2cfba3ea758ed3.setContent(html_80432024d68a36e488b51bd253c10ccc);
+            
+        
+
+        marker_42ce87ffeb3ff5b44ceb17e44fcbe3dc.bindPopup(popup_1879a28a030c343cab2cfba3ea758ed3)
+        ;
+
+        
+    
+    
+            var marker_e58eab91741eb3e7d6e7919e772d79c8 = L.marker(
+                [52.7211, 41.417351],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_5da4a5d0e7d7e0bbb264abf3571d8bc3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fd539466e7e40ab2cf9579d4f54dc431 = $(`<div id="html_fd539466e7e40ab2cf9579d4f54dc431" style="width: 100.0%; height: 100.0%;">Тамбовская область</div>`)[0];
+                popup_5da4a5d0e7d7e0bbb264abf3571d8bc3.setContent(html_fd539466e7e40ab2cf9579d4f54dc431);
+            
+        
+
+        marker_e58eab91741eb3e7d6e7919e772d79c8.bindPopup(popup_5da4a5d0e7d7e0bbb264abf3571d8bc3)
+        ;
+
+        
+    
+    
+        var popup_c506e202518baeb3d24785581d551840 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fe28ae9955d76f2b125a68722c532276 = $(`<div id="html_fe28ae9955d76f2b125a68722c532276" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Астрагал Шерстистоцветковый', 'Барбарис Обыкновенный', 'Борец Северный', 'Дудник Лекарственный', 'Змееголовник Молдавский']<br>             <b>Region:</b> Тамбовская область         </div>         </div>`)[0];
+                popup_c506e202518baeb3d24785581d551840.setContent(html_fe28ae9955d76f2b125a68722c532276);
+            
+        
+
+        marker_e58eab91741eb3e7d6e7919e772d79c8.bindPopup(popup_c506e202518baeb3d24785581d551840)
+        ;
+
+        
+    
+    
+            var marker_9f9d6b041b467e5ba139ed7667dc335d = L.marker(
+                [52.605949, 39.587681],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_411f3caedf02f695fdfc1bac30755e1b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6f33591c410558bd5e8b64b5ef89bbc3 = $(`<div id="html_6f33591c410558bd5e8b64b5ef89bbc3" style="width: 100.0%; height: 100.0%;">Липецкая область</div>`)[0];
+                popup_411f3caedf02f695fdfc1bac30755e1b.setContent(html_6f33591c410558bd5e8b64b5ef89bbc3);
+            
+        
+
+        marker_9f9d6b041b467e5ba139ed7667dc335d.bindPopup(popup_411f3caedf02f695fdfc1bac30755e1b)
+        ;
+
+        
+    
+    
+        var popup_8c4bc8ae503372697fbf8c29678aaad2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1915f3eadb7b1ac201e4360e9b51a477 = $(`<div id="html_1915f3eadb7b1ac201e4360e9b51a477" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Астрагал Шерстистоцветковый', 'Барбарис Обыкновенный', 'Борец Северный', 'Бузина Черная', 'Дудник Лекарственный', 'Плаун Булавовидный']<br>             <b>Region:</b> Липецкая область         </div>         </div>`)[0];
+                popup_8c4bc8ae503372697fbf8c29678aaad2.setContent(html_1915f3eadb7b1ac201e4360e9b51a477);
+            
+        
+
+        marker_9f9d6b041b467e5ba139ed7667dc335d.bindPopup(popup_8c4bc8ae503372697fbf8c29678aaad2)
+        ;
+
+        
+    
+    
+            var marker_93b8463b6f0d7a12dbf2037a0c323dc6 = L.marker(
+                [52.275261, 104.30864],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_e2a749746fd6a82aa30bc221e2b4331e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6a63f98434efddd5ca055cfbb48a99b8 = $(`<div id="html_6a63f98434efddd5ca055cfbb48a99b8" style="width: 100.0%; height: 100.0%;">Иркутская область</div>`)[0];
+                popup_e2a749746fd6a82aa30bc221e2b4331e.setContent(html_6a63f98434efddd5ca055cfbb48a99b8);
+            
+        
+
+        marker_93b8463b6f0d7a12dbf2037a0c323dc6.bindPopup(popup_e2a749746fd6a82aa30bc221e2b4331e)
+        ;
+
+        
+    
+    
+        var popup_fed893de09046bf6f9141b04de581cc6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a01a7abd5e7bb079082946588fca8f46 = $(`<div id="html_a01a7abd5e7bb079082946588fca8f46" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Багульник Болотный', 'Баранец Обыкновенный', 'Вздутоплодник Сибирский', 'Дурман Обыкновенный', 'Зюзник Европейский', 'Копеечник Альпийский', 'Кубышка Жёлтая', 'Лапчатка Серебристая', 'Леспедеца Копеечниковая', 'Пион Уклоняющийся', 'Репешок Волосистый', 'Родиола Розовая', 'Ромашка Безъязычковая', 'Смородина Черная', 'Хмель Обыкновенный', 'Чемерица Лобеля', 'Щитовник Мужской']<br>             <b>Region:</b> Иркутская область         </div>         </div>`)[0];
+                popup_fed893de09046bf6f9141b04de581cc6.setContent(html_a01a7abd5e7bb079082946588fca8f46);
+            
+        
+
+        marker_93b8463b6f0d7a12dbf2037a0c323dc6.bindPopup(popup_fed893de09046bf6f9141b04de581cc6)
+        ;
+
+        
+    
+    
+            var marker_a81915c02ae8dfdd4b3dbd64da6b24f9 = L.marker(
+                [52.045429, 113.498627],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_91898f2e6681dc46ff3275bfacfe5383 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_23b588001f818aa363263c243165ed31 = $(`<div id="html_23b588001f818aa363263c243165ed31" style="width: 100.0%; height: 100.0%;">Забайкальский край</div>`)[0];
+                popup_91898f2e6681dc46ff3275bfacfe5383.setContent(html_23b588001f818aa363263c243165ed31);
+            
+        
+
+        marker_a81915c02ae8dfdd4b3dbd64da6b24f9.bindPopup(popup_91898f2e6681dc46ff3275bfacfe5383)
+        ;
+
+        
+    
+    
+        var popup_3e592b5fa3309ab80bc7661a15bc6ca5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_431654cc007d0b66f348003617a5c8e6 = $(`<div id="html_431654cc007d0b66f348003617a5c8e6" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Белена Черная', 'Вздутоплодник Сибирский', 'Истод Тонколистный', 'Крапива Двудомная', 'Леспедеца Копеечниковая', 'Очиток Большой', 'Пион Уклоняющийся', 'Репешок Волосистый', 'Родиола Розовая', 'Секуринега Полукустарниковая', 'Термопсис Ланцетовидный', 'Тимьян Ползучий', 'Тмин Обыкновенный', 'Чемерица Лобеля', 'Черёмуха Обыкновенная', 'Шлемник Байкальский', 'Щавель Конский', 'Эфедра Хвощевая']<br>             <b>Region:</b> Забайкальский край         </div>         </div>`)[0];
+                popup_3e592b5fa3309ab80bc7661a15bc6ca5.setContent(html_431654cc007d0b66f348003617a5c8e6);
+            
+        
+
+        marker_a81915c02ae8dfdd4b3dbd64da6b24f9.bindPopup(popup_3e592b5fa3309ab80bc7661a15bc6ca5)
+        ;
+
+        
+    
+    
+            var marker_783da2f7fd960780da665f0215c5a524 = L.marker(
+                [51.958118, 85.971291],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_7ca0fffea2386cd87f1d485e04eded1e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dc5636cfe17bf80ad6e35750720467b0 = $(`<div id="html_dc5636cfe17bf80ad6e35750720467b0" style="width: 100.0%; height: 100.0%;">Алтай</div>`)[0];
+                popup_7ca0fffea2386cd87f1d485e04eded1e.setContent(html_dc5636cfe17bf80ad6e35750720467b0);
+            
+        
+
+        marker_783da2f7fd960780da665f0215c5a524.bindPopup(popup_7ca0fffea2386cd87f1d485e04eded1e)
+        ;
+
+        
+    
+    
+        var popup_aa1467df0944e9ddaecbe188f7eea9fb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fe2d4cee80c1d77265575165223b5725 = $(`<div id="html_fe2d4cee80c1d77265575165223b5725" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Алтей Лекарственный', 'Багульник Болотный', 'Бадан Толстолистный', 'Баранец Обыкновенный', 'Бессмертник Песчаный', 'Горец Почечуйный', 'Дурман Обыкновенный', 'Золотарник Канадский', 'Истод Тонколистный', 'Копеечник Альпийский', 'Лапчатка Серебристая', 'Пион Уклоняющийся', 'Плаун Булавовидный', 'Рапонтикум Сафлоровидный', 'Репешок Волосистый', 'Родиола Розовая', 'Ромашка Безъязычковая', 'Синюха Голубая', 'Тимьян Ползучий', 'Фиалка Трёхцветная', 'Шиповник Майский', 'Эфедра Хвощевая']<br>             <b>Region:</b> Алтай         </div>         </div>`)[0];
+                popup_aa1467df0944e9ddaecbe188f7eea9fb.setContent(html_fe2d4cee80c1d77265575165223b5725);
+            
+        
+
+        marker_783da2f7fd960780da665f0215c5a524.bindPopup(popup_aa1467df0944e9ddaecbe188f7eea9fb)
+        ;
+
+        
+    
+    
+            var marker_c8aa884c05bad088d60af41199bfe26c = L.marker(
+                [51.840839, 107.608093],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_8adbb4b3dadb4f6b18f8091d27e55cde = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_84761b0673a3bf6e2d32f4e9ddf188e7 = $(`<div id="html_84761b0673a3bf6e2d32f4e9ddf188e7" style="width: 100.0%; height: 100.0%;">Бурятия</div>`)[0];
+                popup_8adbb4b3dadb4f6b18f8091d27e55cde.setContent(html_84761b0673a3bf6e2d32f4e9ddf188e7);
+            
+        
+
+        marker_c8aa884c05bad088d60af41199bfe26c.bindPopup(popup_8adbb4b3dadb4f6b18f8091d27e55cde)
+        ;
+
+        
+    
+    
+        var popup_d95e31c3415168614e1b742846dbf090 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e5c6612bcad8dcb009b485670265d6f1 = $(`<div id="html_e5c6612bcad8dcb009b485670265d6f1" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Багульник Болотный', 'Бадан Толстолистный', 'Вздутоплодник Сибирский', 'Зюзник Европейский', 'Копеечник Альпийский', 'Лапчатка Серебристая', 'Облепиха Крушиновидная', 'Пион Уклоняющийся', 'Репешок Волосистый', 'Родиола Розовая', 'Смородина Черная', 'Толокнянка Обыкновенная', 'Чемерица Лобеля', 'Якорцы Стелющиеся']<br>             <b>Region:</b> Бурятия         </div>         </div>`)[0];
+                popup_d95e31c3415168614e1b742846dbf090.setContent(html_e5c6612bcad8dcb009b485670265d6f1);
+            
+        
+
+        marker_c8aa884c05bad088d60af41199bfe26c.bindPopup(popup_d95e31c3415168614e1b742846dbf090)
+        ;
+
+        
+    
+    
+            var marker_1c265e73b876af08ff4c07259316c165 = L.marker(
+                [51.769001, 33.471912],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_113119215c55965d24cd532968b4e0f1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_13176126308e5576082092048aa97f33 = $(`<div id="html_13176126308e5576082092048aa97f33" style="width: 100.0%; height: 100.0%;">Воронежская область</div>`)[0];
+                popup_113119215c55965d24cd532968b4e0f1.setContent(html_13176126308e5576082092048aa97f33);
+            
+        
+
+        marker_1c265e73b876af08ff4c07259316c165.bindPopup(popup_113119215c55965d24cd532968b4e0f1)
+        ;
+
+        
+    
+    
+        var popup_e0d8389c2483442cdc8e50f8f6b50f91 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ebcf2ab156f313aecab1038da601d9ed = $(`<div id="html_ebcf2ab156f313aecab1038da601d9ed" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Астрагал Шерстистоцветковый', 'Белокопытник Гибридный', 'Бузина Черная', 'Гармала Обыкновенная', 'Горицвет Весенний', 'Змееголовник Молдавский', 'Коровяк Густоцветковый', 'Лапчатка Прямостоячая', 'Можжевельник Обыкновенный', 'Плаун Булавовидный', 'Пустырник Сердечный', 'Ревень Пальчатый Тангутский', 'Толокнянка Обыкновенная', 'Якорцы Стелющиеся']<br>             <b>Region:</b> Воронежская область         </div>         </div>`)[0];
+                popup_e0d8389c2483442cdc8e50f8f6b50f91.setContent(html_ebcf2ab156f313aecab1038da601d9ed);
+            
+        
+
+        marker_1c265e73b876af08ff4c07259316c165.bindPopup(popup_e0d8389c2483442cdc8e50f8f6b50f91)
+        ;
+
+        
+    
+    
+            var marker_fbd2c734c014b0292895cd4f0d833347 = L.marker(
+                [51.768242, 55.10371],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_a47fbf7ab7b37d9418f40936e54222da = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cbf1564cd8d4cfdf65c37fa2ac6a46c5 = $(`<div id="html_cbf1564cd8d4cfdf65c37fa2ac6a46c5" style="width: 100.0%; height: 100.0%;">Оренбургская область</div>`)[0];
+                popup_a47fbf7ab7b37d9418f40936e54222da.setContent(html_cbf1564cd8d4cfdf65c37fa2ac6a46c5);
+            
+        
+
+        marker_fbd2c734c014b0292895cd4f0d833347.bindPopup(popup_a47fbf7ab7b37d9418f40936e54222da)
+        ;
+
+        
+    
+    
+        var popup_beeb8ed96dc41b093dc0bc20f9b67741 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6dccbb4e2c13c74aec9eba96360284ac = $(`<div id="html_6dccbb4e2c13c74aec9eba96360284ac" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Горец Змеиный', 'Горицвет Весенний', 'Дурман Обыкновенный', 'Дудник Лекарственный', 'Ландыш Майский', 'Мать-И-Мачеха Обыкновенная', 'Пустырник Сердечный', 'Ромашка Безъязычковая', 'Термопсис Ланцетовидный', 'Тимьян Ползучий', 'Тмин Обыкновенный', 'Фиалка Трёхцветная', 'Чемерица Лобеля', 'Якорцы Стелющиеся']<br>             <b>Region:</b> Оренбургская область         </div>         </div>`)[0];
+                popup_beeb8ed96dc41b093dc0bc20f9b67741.setContent(html_6dccbb4e2c13c74aec9eba96360284ac);
+            
+        
+
+        marker_fbd2c734c014b0292895cd4f0d833347.bindPopup(popup_beeb8ed96dc41b093dc0bc20f9b67741)
+        ;
+
+        
+    
+    
+            var marker_3be3866f3a093f5877cfee3958f74961 = L.marker(
+                [51.740261, 36.184879],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_39abab529019d2f05afec961685a3c14 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_93aa4c5b26f3e01d79452ce43c36bdd5 = $(`<div id="html_93aa4c5b26f3e01d79452ce43c36bdd5" style="width: 100.0%; height: 100.0%;">Курская область</div>`)[0];
+                popup_39abab529019d2f05afec961685a3c14.setContent(html_93aa4c5b26f3e01d79452ce43c36bdd5);
+            
+        
+
+        marker_3be3866f3a093f5877cfee3958f74961.bindPopup(popup_39abab529019d2f05afec961685a3c14)
+        ;
+
+        
+    
+    
+        var popup_f07b4f86f21e95a93b3005a5c0cb125b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bfaf806ffa0aa71d8fede2e754f5de9c = $(`<div id="html_bfaf806ffa0aa71d8fede2e754f5de9c" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Астрагал Шерстистоцветковый', 'Бузина Черная', 'Дудник Лекарственный', 'Желтушник Раскидистый', 'Змееголовник Молдавский', 'Наперстянка Крупноцветковая', 'Плаун Булавовидный']<br>             <b>Region:</b> Курская область         </div>         </div>`)[0];
+                popup_f07b4f86f21e95a93b3005a5c0cb125b.setContent(html_bfaf806ffa0aa71d8fede2e754f5de9c);
+            
+        
+
+        marker_3be3866f3a093f5877cfee3958f74961.bindPopup(popup_f07b4f86f21e95a93b3005a5c0cb125b)
+        ;
+
+        
+    
+    
+            var marker_cd7f0d7bf7e48ba76faa49ce5c89439f = L.marker(
+                [51.721909, 94.417397],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_cc9054ff75fb09d0760e2ff1d043b7ac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1394d05aa6dffb3df925388174ccf172 = $(`<div id="html_1394d05aa6dffb3df925388174ccf172" style="width: 100.0%; height: 100.0%;">Тыва</div>`)[0];
+                popup_cc9054ff75fb09d0760e2ff1d043b7ac.setContent(html_1394d05aa6dffb3df925388174ccf172);
+            
+        
+
+        marker_cd7f0d7bf7e48ba76faa49ce5c89439f.bindPopup(popup_cc9054ff75fb09d0760e2ff1d043b7ac)
+        ;
+
+        
+    
+    
+        var popup_2e5f0733496a9aa875bd77513c74db06 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_084d26784a9c536759cc3eaf1d0caabc = $(`<div id="html_084d26784a9c536759cc3eaf1d0caabc" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Пион Уклоняющийся', 'Рапонтикум Сафлоровидный', 'Репешок Волосистый', 'Синюха Голубая', 'Тимьян Ползучий']<br>             <b>Region:</b> Тыва         </div>         </div>`)[0];
+                popup_2e5f0733496a9aa875bd77513c74db06.setContent(html_084d26784a9c536759cc3eaf1d0caabc);
+            
+        
+
+        marker_cd7f0d7bf7e48ba76faa49ce5c89439f.bindPopup(popup_2e5f0733496a9aa875bd77513c74db06)
+        ;
+
+        
+    
+    
+            var marker_4dab4b562bee9ea84c70448959bb2c41 = L.marker(
+                [51.533268, 46.03455],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_582e704f87ca6f43060fa5677aa26176 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b532210f4cfc9ffa8e62193cab97b50d = $(`<div id="html_b532210f4cfc9ffa8e62193cab97b50d" style="width: 100.0%; height: 100.0%;">Саратовская область</div>`)[0];
+                popup_582e704f87ca6f43060fa5677aa26176.setContent(html_b532210f4cfc9ffa8e62193cab97b50d);
+            
+        
+
+        marker_4dab4b562bee9ea84c70448959bb2c41.bindPopup(popup_582e704f87ca6f43060fa5677aa26176)
+        ;
+
+        
+    
+    
+        var popup_352d94b4a0df43d0c8d3e081fa10f4a4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c745e7fbe1242dafbd13c4d1c953714c = $(`<div id="html_c745e7fbe1242dafbd13c4d1c953714c" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Астрагал Шерстистоцветковый', 'Барбарис Обыкновенный', 'Вахта Трехлистная', 'Горицвет Весенний', 'Горчица Сарептская', 'Земляника Лесная', 'Змееголовник Молдавский', 'Морковь Дикая', 'Наперстянка Крупноцветковая', 'Плаун Булавовидный', 'Пустырник Сердечный', 'Ромашка Безъязычковая', 'Рябина Обыкновенная', 'Сабельник Болотный', 'Тмин Обыкновенный', 'Фиалка Трёхцветная', 'Чемерица Лобеля', 'Щитовник Мужской']<br>             <b>Region:</b> Саратовская область         </div>         </div>`)[0];
+                popup_352d94b4a0df43d0c8d3e081fa10f4a4.setContent(html_c745e7fbe1242dafbd13c4d1c953714c);
+            
+        
+
+        marker_4dab4b562bee9ea84c70448959bb2c41.bindPopup(popup_352d94b4a0df43d0c8d3e081fa10f4a4)
+        ;
+
+        
+    
+    
+            var marker_7f0e411ae6918cc746c2d0feeec3b380 = L.marker(
+                [50.596611, 36.609211],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_a5d60988c7fefe9a9e1fba93ba238f5e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9f5e9561390ab478472b134a9a5414dd = $(`<div id="html_9f5e9561390ab478472b134a9a5414dd" style="width: 100.0%; height: 100.0%;">Белгородская область</div>`)[0];
+                popup_a5d60988c7fefe9a9e1fba93ba238f5e.setContent(html_9f5e9561390ab478472b134a9a5414dd);
+            
+        
+
+        marker_7f0e411ae6918cc746c2d0feeec3b380.bindPopup(popup_a5d60988c7fefe9a9e1fba93ba238f5e)
+        ;
+
+        
+    
+    
+        var popup_c25cd779cb9e6e8754622f41cca0a25d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2519787604321cb2acbfd35db6394dc0 = $(`<div id="html_2519787604321cb2acbfd35db6394dc0" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Алоэ Древовидное', 'Астрагал Шерстистоцветковый', 'Дудник Лекарственный', 'Черника Обыкновенная', 'Якорцы Стелющиеся']<br>             <b>Region:</b> Белгородская область         </div>         </div>`)[0];
+                popup_c25cd779cb9e6e8754622f41cca0a25d.setContent(html_2519787604321cb2acbfd35db6394dc0);
+            
+        
+
+        marker_7f0e411ae6918cc746c2d0feeec3b380.bindPopup(popup_c25cd779cb9e6e8754622f41cca0a25d)
+        ;
+
+        
+    
+    
+            var marker_276f8f95bcb2ba7752197ae23f02e4ce = L.marker(
+                [50.27494, 127.534142],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_05f7edd100505cc4b0283354e3d804eb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_04e73deebeb2a968395639c4a8e85a4e = $(`<div id="html_04e73deebeb2a968395639c4a8e85a4e" style="width: 100.0%; height: 100.0%;">Амурская область</div>`)[0];
+                popup_05f7edd100505cc4b0283354e3d804eb.setContent(html_04e73deebeb2a968395639c4a8e85a4e);
+            
+        
+
+        marker_276f8f95bcb2ba7752197ae23f02e4ce.bindPopup(popup_05f7edd100505cc4b0283354e3d804eb)
+        ;
+
+        
+    
+    
+        var popup_84ae814927fdaeb6bf105cbb4cb5c7b7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ff367f8fc5bc4bf5b7a5cfd1e89ddb0e = $(`<div id="html_ff367f8fc5bc4bf5b7a5cfd1e89ddb0e" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Аир Обыкновенный', 'Аралия Высокая', 'Багульник Болотный', 'Бархат Амурский', 'Белена Черная', 'Вздутоплодник Сибирский', 'Диоскорея Ниппонская', 'Истод Тонколистный', 'Копеечник Альпийский', 'Леспедеца Двуцветная', 'Леспедеца Копеечниковая', 'Лимонник Китайский', 'Родиола Розовая', 'Свободноягодник Колючий', 'Секуринега Полукустарниковая', 'Смородина Черная', 'Толокнянка Обыкновенная', 'Чемерица Лобеля', 'Шлемник Байкальский']<br>             <b>Region:</b> Амурская область         </div>         </div>`)[0];
+                popup_84ae814927fdaeb6bf105cbb4cb5c7b7.setContent(html_ff367f8fc5bc4bf5b7a5cfd1e89ddb0e);
+            
+        
+
+        marker_276f8f95bcb2ba7752197ae23f02e4ce.bindPopup(popup_84ae814927fdaeb6bf105cbb4cb5c7b7)
+        ;
+
+        
+    
+    
+            var marker_b131fdb71c6ec2b8714c190bfaf40a7e = L.marker(
+                [48.800671, 132.899139],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_eb14c4e33cb84c92e34bb02dda32b89c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_83ebe1c10cdfed08fa47b44d1456dd8b = $(`<div id="html_83ebe1c10cdfed08fa47b44d1456dd8b" style="width: 100.0%; height: 100.0%;">Еврейская автономная область</div>`)[0];
+                popup_eb14c4e33cb84c92e34bb02dda32b89c.setContent(html_83ebe1c10cdfed08fa47b44d1456dd8b);
+            
+        
+
+        marker_b131fdb71c6ec2b8714c190bfaf40a7e.bindPopup(popup_eb14c4e33cb84c92e34bb02dda32b89c)
+        ;
+
+        
+    
+    
+        var popup_f986ab35f5cf7714c957b580b02bfb0d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8113d38c887dd4e8bb180c27625bcc2c = $(`<div id="html_8113d38c887dd4e8bb180c27625bcc2c" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Аралия Высокая', 'Женьшень', 'Истод Тонколистный', 'Родиола Розовая', 'Секуринега Полукустарниковая', 'Шлемник Байкальский']<br>             <b>Region:</b> Еврейская автономная область         </div>         </div>`)[0];
+                popup_f986ab35f5cf7714c957b580b02bfb0d.setContent(html_8113d38c887dd4e8bb180c27625bcc2c);
+            
+        
+
+        marker_b131fdb71c6ec2b8714c190bfaf40a7e.bindPopup(popup_f986ab35f5cf7714c957b580b02bfb0d)
+        ;
+
+        
+    
+    
+            var marker_70be6e51eac7f43af726a20f8dbfb6a0 = L.marker(
+                [48.718079, 44.504639],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_09b892f825ba35d7e45407fb5e70a737 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a2dbe39072b0de1ab7cdf3da61013619 = $(`<div id="html_a2dbe39072b0de1ab7cdf3da61013619" style="width: 100.0%; height: 100.0%;">Волгоградская область</div>`)[0];
+                popup_09b892f825ba35d7e45407fb5e70a737.setContent(html_a2dbe39072b0de1ab7cdf3da61013619);
+            
+        
+
+        marker_70be6e51eac7f43af726a20f8dbfb6a0.bindPopup(popup_09b892f825ba35d7e45407fb5e70a737)
+        ;
+
+        
+    
+    
+        var popup_ecf8de7e809023c3ae9bf6c4673888ce = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ae95abffccbce3b730733278c868c81f = $(`<div id="html_ae95abffccbce3b730733278c868c81f" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Астрагал Шерстистоцветковый', 'Барбарис Обыкновенный', 'Василек Посевной', 'Горец Перечный', 'Горец Почечуйный', 'Девясил Высокий', 'Дурман Обыкновенный', 'Жостер Слабительный', 'Змееголовник Молдавский', 'Ольха Чёрная', 'Переступень Белый', 'Плаун Булавовидный', 'Ромашка Безъязычковая', 'Фиалка Трёхцветная', 'Хвощ Полевой', 'Чемерица Лобеля', 'Щитовник Мужской', 'Якорцы Стелющиеся']<br>             <b>Region:</b> Волгоградская область         </div>         </div>`)[0];
+                popup_ecf8de7e809023c3ae9bf6c4673888ce.setContent(html_ae95abffccbce3b730733278c868c81f);
+            
+        
+
+        marker_70be6e51eac7f43af726a20f8dbfb6a0.bindPopup(popup_ecf8de7e809023c3ae9bf6c4673888ce)
+        ;
+
+        
+    
+    
+            var marker_67548e08b984b5b1ea2fe474b44a2c54 = L.marker(
+                [48.476719, 135.09407],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_7e177ad799d3a9a45013ab9066fb513e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c4f878a7880bd5b7294abb748e43a966 = $(`<div id="html_c4f878a7880bd5b7294abb748e43a966" style="width: 100.0%; height: 100.0%;">Хабаровский край</div>`)[0];
+                popup_7e177ad799d3a9a45013ab9066fb513e.setContent(html_c4f878a7880bd5b7294abb748e43a966);
+            
+        
+
+        marker_67548e08b984b5b1ea2fe474b44a2c54.bindPopup(popup_7e177ad799d3a9a45013ab9066fb513e)
+        ;
+
+        
+    
+    
+        var popup_4263dcad3b4894a16e2a07601c2fc4cd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d46834d79016287cbb52d264edf3c871 = $(`<div id="html_d46834d79016287cbb52d264edf3c871" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Аир Обыкновенный', 'Аралия Высокая', 'Бархат Амурский', 'Белена Черная', 'Диоскорея Ниппонская', 'Женьшень', 'Копеечник Альпийский', 'Леспедеца Двуцветная', 'Лимонник Китайский', 'Одуванчик Изогнутый', 'Родиола Розовая', 'Ромашка Безъязычковая', 'Свободноягодник Колючий', 'Секуринега Полукустарниковая', 'Смородина Черная', 'Толокнянка Обыкновенная', 'Тысячелистник Обыкновенный', 'Шиповник Майский', 'Шлемник Байкальский']<br>             <b>Region:</b> Хабаровский край         </div>         </div>`)[0];
+                popup_4263dcad3b4894a16e2a07601c2fc4cd.setContent(html_d46834d79016287cbb52d264edf3c871);
+            
+        
+
+        marker_67548e08b984b5b1ea2fe474b44a2c54.bindPopup(popup_4263dcad3b4894a16e2a07601c2fc4cd)
+        ;
+
+        
+    
+    
+            var marker_002b78bc69bfd5bf3dea84ae41318086 = L.marker(
+                [47.233189, 39.715],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_52acba51ae9a8fb5b9ad6add1b68b669 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef7deef286b3d282c21f9a4cb3403bbd = $(`<div id="html_ef7deef286b3d282c21f9a4cb3403bbd" style="width: 100.0%; height: 100.0%;">Ростовская область</div>`)[0];
+                popup_52acba51ae9a8fb5b9ad6add1b68b669.setContent(html_ef7deef286b3d282c21f9a4cb3403bbd);
+            
+        
+
+        marker_002b78bc69bfd5bf3dea84ae41318086.bindPopup(popup_52acba51ae9a8fb5b9ad6add1b68b669)
+        ;
+
+        
+    
+    
+        var popup_d9b6790d46e3df0f49edabee2b0da474 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f9f63089cbd114779eb7a0d20db67ac8 = $(`<div id="html_f9f63089cbd114779eb7a0d20db67ac8" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Астрагал Шерстистоцветковый', 'Барвинок Малый', 'Горец Перечный', 'Горицвет Весенний', 'Девясил Высокий', 'Дуб Обыкновенный', 'Дурман Обыкновенный', 'Змееголовник Молдавский', 'Кубышка Жёлтая', 'Мачок Жёлтый', 'Можжевельник Обыкновенный', 'Пустырник Сердечный']<br>             <b>Region:</b> Ростовская область         </div>         </div>`)[0];
+                popup_d9b6790d46e3df0f49edabee2b0da474.setContent(html_f9f63089cbd114779eb7a0d20db67ac8);
+            
+        
+
+        marker_002b78bc69bfd5bf3dea84ae41318086.bindPopup(popup_d9b6790d46e3df0f49edabee2b0da474)
+        ;
+
+        
+    
+    
+            var marker_ba5a3b7e603ff26f0f0c18043bd849ff = L.marker(
+                [46.961262, 142.731979],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_d06bece8d3a8dc2d16175bd88e72dbf8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_abdf2523a8e1401accbb989db24cdd11 = $(`<div id="html_abdf2523a8e1401accbb989db24cdd11" style="width: 100.0%; height: 100.0%;">Сахалинская область</div>`)[0];
+                popup_d06bece8d3a8dc2d16175bd88e72dbf8.setContent(html_abdf2523a8e1401accbb989db24cdd11);
+            
+        
+
+        marker_ba5a3b7e603ff26f0f0c18043bd849ff.bindPopup(popup_d06bece8d3a8dc2d16175bd88e72dbf8)
+        ;
+
+        
+    
+    
+        var popup_ff1371baa19083b138f9932ee7a7a7c1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1e6b87b902fce6c16f527783c67a6c10 = $(`<div id="html_1e6b87b902fce6c16f527783c67a6c10" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Аир Обыкновенный', 'Аралия Высокая', 'Багульник Болотный', 'Брусника Обыкновенная', 'Горец Перечный', 'Горец Почечуйный', 'Горец Птичий', 'Кровохлёбка Лекарственная', 'Ламинария Японская', 'Леспедеца Двуцветная', 'Лимонник Китайский', 'Лопух Большой', 'Пастушья Сумка Обыкновенная', 'Плаун Булавовидный', 'Родиола Розовая', 'Ромашка Безъязычковая', 'Свободноягодник Колючий', 'Толокнянка Обыкновенная', 'Тысячелистник Обыкновенный', 'Черёмуха Обыкновенная', 'Чистотел Большой', 'Шиповник Майский']<br>             <b>Region:</b> Сахалинская область         </div>         </div>`)[0];
+                popup_ff1371baa19083b138f9932ee7a7a7c1.setContent(html_1e6b87b902fce6c16f527783c67a6c10);
+            
+        
+
+        marker_ba5a3b7e603ff26f0f0c18043bd849ff.bindPopup(popup_ff1371baa19083b138f9932ee7a7a7c1)
+        ;
+
+        
+    
+    
+            var marker_4de640600225860f9002c7faea679cdd = L.marker(
+                [46.354889, 48.052719],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_4a2a927e8ff1a97fb480b14bac7e7475 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1fa7b24c687acbcd416a71e8156995f2 = $(`<div id="html_1fa7b24c687acbcd416a71e8156995f2" style="width: 100.0%; height: 100.0%;">Астраханская область</div>`)[0];
+                popup_4a2a927e8ff1a97fb480b14bac7e7475.setContent(html_1fa7b24c687acbcd416a71e8156995f2);
+            
+        
+
+        marker_4de640600225860f9002c7faea679cdd.bindPopup(popup_4a2a927e8ff1a97fb480b14bac7e7475)
+        ;
+
+        
+    
+    
+        var popup_cb888ba1138c759feffa14358e3ae31c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_af9f4d027507e9316342378865fd47e4 = $(`<div id="html_af9f4d027507e9316342378865fd47e4" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Астрагал Шерстистоцветковый', 'Горец Перечный', 'Зверобой Продырявленный', 'Змееголовник Молдавский', 'Переступень Белый']<br>             <b>Region:</b> Астраханская область         </div>         </div>`)[0];
+                popup_cb888ba1138c759feffa14358e3ae31c.setContent(html_af9f4d027507e9316342378865fd47e4);
+            
+        
+
+        marker_4de640600225860f9002c7faea679cdd.bindPopup(popup_cb888ba1138c759feffa14358e3ae31c)
+        ;
+
+        
+    
+    
+            var marker_af8f82ea616f8eed1f48865b85089f41 = L.marker(
+                [46.312962, 44.25346],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_ffca90da45bf6c45ee6f7cb6850550c6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9cf5e3b47a7e8920dbf3affcf3bc771b = $(`<div id="html_9cf5e3b47a7e8920dbf3affcf3bc771b" style="width: 100.0%; height: 100.0%;">Калмыкия</div>`)[0];
+                popup_ffca90da45bf6c45ee6f7cb6850550c6.setContent(html_9cf5e3b47a7e8920dbf3affcf3bc771b);
+            
+        
+
+        marker_af8f82ea616f8eed1f48865b85089f41.bindPopup(popup_ffca90da45bf6c45ee6f7cb6850550c6)
+        ;
+
+        
+    
+    
+        var popup_6e31eccb5bdba5fd9e38200db9ddf25b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c825ce173add1114228aea7ce4664ac8 = $(`<div id="html_c825ce173add1114228aea7ce4664ac8" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Пустырник Сердечный', 'Щавель Конский']<br>             <b>Region:</b> Калмыкия         </div>         </div>`)[0];
+                popup_6e31eccb5bdba5fd9e38200db9ddf25b.setContent(html_c825ce173add1114228aea7ce4664ac8);
+            
+        
+
+        marker_af8f82ea616f8eed1f48865b85089f41.bindPopup(popup_6e31eccb5bdba5fd9e38200db9ddf25b)
+        ;
+
+        
+    
+    
+            var marker_1f18f02c64937f0a71fdfcf6e1d7b869 = L.marker(
+                [45.042149, 38.98064],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_9eca71d97603e9b15b3370252d0a84f4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ea42b63651236454e03612ca9709c210 = $(`<div id="html_ea42b63651236454e03612ca9709c210" style="width: 100.0%; height: 100.0%;">Краснодарский край</div>`)[0];
+                popup_9eca71d97603e9b15b3370252d0a84f4.setContent(html_ea42b63651236454e03612ca9709c210);
+            
+        
+
+        marker_1f18f02c64937f0a71fdfcf6e1d7b869.bindPopup(popup_9eca71d97603e9b15b3370252d0a84f4)
+        ;
+
+        
+    
+    
+        var popup_4a0575e875601b52499895e05e708b92 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ff80480f0b4189bcecab20bec2d6fe69 = $(`<div id="html_ff80480f0b4189bcecab20bec2d6fe69" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Амми Большая', 'Барбарис Обыкновенный', 'Барвинок Малый', 'Безвременник Великолепный', 'Бессмертник Песчаный', 'Василек Посевной', 'Змееголовник Молдавский', 'Ломонос Виноградолистный', 'Мачок Жёлтый', 'Наперстянка Крупноцветковая', 'Плаун Булавовидный', 'Ромашка Аптечная', 'Сабельник Болотный', 'Скополия Карниолийская', 'Фенхель Обыкновенный']<br>             <b>Region:</b> Краснодарский край         </div>         </div>`)[0];
+                popup_4a0575e875601b52499895e05e708b92.setContent(html_ff80480f0b4189bcecab20bec2d6fe69);
+            
+        
+
+        marker_1f18f02c64937f0a71fdfcf6e1d7b869.bindPopup(popup_4a0575e875601b52499895e05e708b92)
+        ;
+
+        
+    
+    
+            var marker_9c57fd8261f0b5bd9059eba57dbc8071 = L.marker(
+                [45.039131, 41.98214],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_4dc7b2b8f12f482961fa8a9229b11378 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5955f179c6868839f2032402c34c0d7d = $(`<div id="html_5955f179c6868839f2032402c34c0d7d" style="width: 100.0%; height: 100.0%;">Ставропольский край</div>`)[0];
+                popup_4dc7b2b8f12f482961fa8a9229b11378.setContent(html_5955f179c6868839f2032402c34c0d7d);
+            
+        
+
+        marker_9c57fd8261f0b5bd9059eba57dbc8071.bindPopup(popup_4dc7b2b8f12f482961fa8a9229b11378)
+        ;
+
+        
+    
+    
+        var popup_908c099218fc52a738c69c974adb1b68 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d13fd226f775f8bb4bd347fd0947c0a0 = $(`<div id="html_d13fd226f775f8bb4bd347fd0947c0a0" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Амми Зубная', 'Астрагал Шерстистоцветковый', 'Барвинок Малый', 'Белокопытник Гибридный', 'Бессмертник Песчаный', 'Василек Посевной', 'Дурман Обыкновенный', 'Красавка Обыкновенная', 'Лапчатка Прямостоячая', 'Ломонос Виноградолистный', 'Марена Красильная', 'Наперстянка Крупноцветковая', 'Окопник Жёсткий', 'Омела Белая', 'Пустырник Сердечный', 'Чемерица Лобеля', 'Щавель Конский']<br>             <b>Region:</b> Ставропольский край         </div>         </div>`)[0];
+                popup_908c099218fc52a738c69c974adb1b68.setContent(html_d13fd226f775f8bb4bd347fd0947c0a0);
+            
+        
+
+        marker_9c57fd8261f0b5bd9059eba57dbc8071.bindPopup(popup_908c099218fc52a738c69c974adb1b68)
+        ;
+
+        
+    
+    
+            var marker_64495b7a9ee189e1e57bf32753d73412 = L.marker(
+                [44.952118, 34.102417],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_6bffd8f229c9da010ab84fb084e51ae5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_406db3cf1537d88d4e19cc6499f392eb = $(`<div id="html_406db3cf1537d88d4e19cc6499f392eb" style="width: 100.0%; height: 100.0%;">Крым</div>`)[0];
+                popup_6bffd8f229c9da010ab84fb084e51ae5.setContent(html_406db3cf1537d88d4e19cc6499f392eb);
+            
+        
+
+        marker_64495b7a9ee189e1e57bf32753d73412.bindPopup(popup_6bffd8f229c9da010ab84fb084e51ae5)
+        ;
+
+        
+    
+    
+        var popup_c4425f9d67fdc669b1c701e7c6933336 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_aea8c1f3507cd294c0f158c82a0e1538 = $(`<div id="html_aea8c1f3507cd294c0f158c82a0e1538" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Амми Большая', 'Барвинок Малый', 'Виноград Культурный', 'Водосбор Обыкновенный', 'Жостер Слабительный', 'Земляника Лесная', 'Змееголовник Молдавский', 'Зюзник Европейский', 'Кориандр Посевной', 'Ломонос Виноградолистный', 'Лопух Большой', 'Магнолия Крупноцветковая', 'Марена Красильная', 'Мачок Жёлтый', 'Миндаль Обыкновенный', 'Омела Белая', 'Паслен Сладко-Горький', 'Пиретрум Цинерариелистный', 'Прутняк Обыкновенный', 'Репешок Обыкновенный', 'Смоковница Обыкновенная', 'Сумах Дубильный', 'Фенхель Обыкновенный', 'Эвкоммия Вязолистная']<br>             <b>Region:</b> Крым         </div>         </div>`)[0];
+                popup_c4425f9d67fdc669b1c701e7c6933336.setContent(html_aea8c1f3507cd294c0f158c82a0e1538);
+            
+        
+
+        marker_64495b7a9ee189e1e57bf32753d73412.bindPopup(popup_c4425f9d67fdc669b1c701e7c6933336)
+        ;
+
+        
+    
+    
+            var marker_abd5ac0578fc24cb026b1ca266993280 = L.marker(
+                [44.609138, 40.113209],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_20e00d8c83ce3f7416262cf231878122 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_188bbd5992c80d06b93c7f394672d285 = $(`<div id="html_188bbd5992c80d06b93c7f394672d285" style="width: 100.0%; height: 100.0%;">Адыгея</div>`)[0];
+                popup_20e00d8c83ce3f7416262cf231878122.setContent(html_188bbd5992c80d06b93c7f394672d285);
+            
+        
+
+        marker_abd5ac0578fc24cb026b1ca266993280.bindPopup(popup_20e00d8c83ce3f7416262cf231878122)
+        ;
+
+        
+    
+    
+        var popup_d61a0143d440bf8def0c935756da6857 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5e2e0441c5a25c0f523277055b0cad5a = $(`<div id="html_5e2e0441c5a25c0f523277055b0cad5a" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Безвременник Великолепный']<br>             <b>Region:</b> Адыгея         </div>         </div>`)[0];
+                popup_d61a0143d440bf8def0c935756da6857.setContent(html_5e2e0441c5a25c0f523277055b0cad5a);
+            
+        
+
+        marker_abd5ac0578fc24cb026b1ca266993280.bindPopup(popup_d61a0143d440bf8def0c935756da6857)
+        ;
+
+        
+    
+    
+            var marker_f10dbaccde86621a3e4584e80dcc959a = L.marker(
+                [44.50885, 33.60051],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_d8372e3b03ae3ab7578a2c96b36bd524 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c57bfb869a49597d5b541aa0e306398 = $(`<div id="html_8c57bfb869a49597d5b541aa0e306398" style="width: 100.0%; height: 100.0%;">Севастополь</div>`)[0];
+                popup_d8372e3b03ae3ab7578a2c96b36bd524.setContent(html_8c57bfb869a49597d5b541aa0e306398);
+            
+        
+
+        marker_f10dbaccde86621a3e4584e80dcc959a.bindPopup(popup_d8372e3b03ae3ab7578a2c96b36bd524)
+        ;
+
+        
+    
+    
+            var marker_e777a4b70ef65521188ab3ae2b9d320e = L.marker(
+                [44.23085, 42.06477],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_44a89a8b36c101aabb649a262cb6dd08 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_40559657b94aad01ea36e8ec77cea4b2 = $(`<div id="html_40559657b94aad01ea36e8ec77cea4b2" style="width: 100.0%; height: 100.0%;">Карачаево - Черкесская Республика</div>`)[0];
+                popup_44a89a8b36c101aabb649a262cb6dd08.setContent(html_40559657b94aad01ea36e8ec77cea4b2);
+            
+        
+
+        marker_e777a4b70ef65521188ab3ae2b9d320e.bindPopup(popup_44a89a8b36c101aabb649a262cb6dd08)
+        ;
+
+        
+    
+    
+        var popup_b0200b215cbca72c01dd8bee4350fca0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c7c691768741e77eab658f5d4b1524d0 = $(`<div id="html_c7c691768741e77eab658f5d4b1524d0" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Безвременник Великолепный', 'Ломонос Виноградолистный']<br>             <b>Region:</b> Карачаево - Черкесская Республика         </div>         </div>`)[0];
+                popup_b0200b215cbca72c01dd8bee4350fca0.setContent(html_c7c691768741e77eab658f5d4b1524d0);
+            
+        
+
+        marker_e777a4b70ef65521188ab3ae2b9d320e.bindPopup(popup_b0200b215cbca72c01dd8bee4350fca0)
+        ;
+
+        
+    
+    
+            var marker_bb736269cf9b5284f39202bfb5c1289d = L.marker(
+                [43.48695, 43.602989],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_2241c9f3c65e2d8e782bcfe177160b23 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7e7e5bf8fddd490de9c2cfe4ee1ffee3 = $(`<div id="html_7e7e5bf8fddd490de9c2cfe4ee1ffee3" style="width: 100.0%; height: 100.0%;">Кабардино - Балкарская Республика</div>`)[0];
+                popup_2241c9f3c65e2d8e782bcfe177160b23.setContent(html_7e7e5bf8fddd490de9c2cfe4ee1ffee3);
+            
+        
+
+        marker_bb736269cf9b5284f39202bfb5c1289d.bindPopup(popup_2241c9f3c65e2d8e782bcfe177160b23)
+        ;
+
+        
+    
+    
+        var popup_9ab20b5f2bb2487f4179e4daa7a4893b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_929b630c37a4bd8122bc26b3a5ea9426 = $(`<div id="html_929b630c37a4bd8122bc26b3a5ea9426" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Безвременник Великолепный', 'Ломонос Виноградолистный']<br>             <b>Region:</b> Кабардино - Балкарская Республика         </div>         </div>`)[0];
+                popup_9ab20b5f2bb2487f4179e4daa7a4893b.setContent(html_929b630c37a4bd8122bc26b3a5ea9426);
+            
+        
+
+        marker_bb736269cf9b5284f39202bfb5c1289d.bindPopup(popup_9ab20b5f2bb2487f4179e4daa7a4893b)
+        ;
+
+        
+    
+    
+            var marker_bfdedebcb37335b346d655c609511221 = L.marker(
+                [43.309841, 45.670391],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_40e02d8fbd96d7527abc4f66c082abd2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eecddb9ebbd6a55580941638219a0469 = $(`<div id="html_eecddb9ebbd6a55580941638219a0469" style="width: 100.0%; height: 100.0%;">Чеченская Республика</div>`)[0];
+                popup_40e02d8fbd96d7527abc4f66c082abd2.setContent(html_eecddb9ebbd6a55580941638219a0469);
+            
+        
+
+        marker_bfdedebcb37335b346d655c609511221.bindPopup(popup_40e02d8fbd96d7527abc4f66c082abd2)
+        ;
+
+        
+    
+    
+        var popup_1ce5d3707e37755fca36f64da34def6c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8e1cba9f5a6ecb308d50a919e0db35f0 = $(`<div id="html_8e1cba9f5a6ecb308d50a919e0db35f0" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Безвременник Великолепный']<br>             <b>Region:</b> Чеченская Республика         </div>         </div>`)[0];
+                popup_1ce5d3707e37755fca36f64da34def6c.setContent(html_8e1cba9f5a6ecb308d50a919e0db35f0);
+            
+        
+
+        marker_bfdedebcb37335b346d655c609511221.bindPopup(popup_1ce5d3707e37755fca36f64da34def6c)
+        ;
+
+        
+    
+    
+            var marker_aa35c4be6361a6f402823fe8700b135b = L.marker(
+                [43.130692, 131.923828],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_69c2e69cd6045fff59911769ca25bcb5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_865887b33a910188f2b87495be2b5f70 = $(`<div id="html_865887b33a910188f2b87495be2b5f70" style="width: 100.0%; height: 100.0%;">Приморский край</div>`)[0];
+                popup_69c2e69cd6045fff59911769ca25bcb5.setContent(html_865887b33a910188f2b87495be2b5f70);
+            
+        
+
+        marker_aa35c4be6361a6f402823fe8700b135b.bindPopup(popup_69c2e69cd6045fff59911769ca25bcb5)
+        ;
+
+        
+    
+    
+        var popup_93f75fefa46c4b4436c289a14d7883c9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_96dd19a2787d0c0f25a89430dbf89362 = $(`<div id="html_96dd19a2787d0c0f25a89430dbf89362" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Аир Обыкновенный', 'Аралия Высокая', 'Багульник Болотный', 'Бархат Амурский', 'Бедренец Камнеломка', 'Белена Черная', 'Брусника Обыкновенная', 'Горец Почечуйный', 'Диоскорея Ниппонская', 'Дурман Обыкновенный', 'Женьшень', 'Заманиха Высокая', 'Золотарник Канадский', 'Истод Тонколистный', 'Копеечник Альпийский', 'Крапива Двудомная', 'Кровохлёбка Лекарственная', 'Кубышка Жёлтая', 'Лабазник Обыкновенный', 'Леспедеца Двуцветная', 'Леспедеца Копеечниковая', 'Лимонник Китайский', 'Марена Красильная', 'Мачок Жёлтый', 'Мята Перечная', 'Пустырник Сердечный', 'Родиола Розовая', 'Ромашка Аптечная', 'Свободноягодник Колючий', 'Секуринега Полукустарниковая', 'Тмин Обыкновенный', 'Тысячелистник Обыкновенный', 'Хмель Обыкновенный', 'Шиповник Майский', 'Шлемник Байкальский', 'Щавель Конский']<br>             <b>Region:</b> Приморский край         </div>         </div>`)[0];
+                popup_93f75fefa46c4b4436c289a14d7883c9.setContent(html_96dd19a2787d0c0f25a89430dbf89362);
+            
+        
+
+        marker_aa35c4be6361a6f402823fe8700b135b.bindPopup(popup_93f75fefa46c4b4436c289a14d7883c9)
+        ;
+
+        
+    
+    
+            var marker_c1a86d5991009046191ae67c86211609 = L.marker(
+                [43.1, 44.49],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_cbf40e44402371966d209d8ece7fc53a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4a9d412a54e27ccf31a303a117f6bffa = $(`<div id="html_4a9d412a54e27ccf31a303a117f6bffa" style="width: 100.0%; height: 100.0%;">Ингушетия</div>`)[0];
+                popup_cbf40e44402371966d209d8ece7fc53a.setContent(html_4a9d412a54e27ccf31a303a117f6bffa);
+            
+        
+
+        marker_c1a86d5991009046191ae67c86211609.bindPopup(popup_cbf40e44402371966d209d8ece7fc53a)
+        ;
+
+        
+    
+    
+        var popup_0e45ed7a7654c447091d01fbb88f9821 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c7dd6dbd9db7d24a44c5c30ad4a0240e = $(`<div id="html_c7dd6dbd9db7d24a44c5c30ad4a0240e" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Безвременник Великолепный', 'Ломонос Виноградолистный']<br>             <b>Region:</b> Ингушетия         </div>         </div>`)[0];
+                popup_0e45ed7a7654c447091d01fbb88f9821.setContent(html_c7dd6dbd9db7d24a44c5c30ad4a0240e);
+            
+        
+
+        marker_c1a86d5991009046191ae67c86211609.bindPopup(popup_0e45ed7a7654c447091d01fbb88f9821)
+        ;
+
+        
+    
+    
+            var marker_4bfb9794bd5c607970b3a0d5c8c8a757 = L.marker(
+                [43.031231, 44.67577],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_bfd0e077caf9d8015f2e88165e3d3e53 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8e08b0de008293c225ac9ab11dbd92e1 = $(`<div id="html_8e08b0de008293c225ac9ab11dbd92e1" style="width: 100.0%; height: 100.0%;">Северная Осетия-Алания</div>`)[0];
+                popup_bfd0e077caf9d8015f2e88165e3d3e53.setContent(html_8e08b0de008293c225ac9ab11dbd92e1);
+            
+        
+
+        marker_4bfb9794bd5c607970b3a0d5c8c8a757.bindPopup(popup_bfd0e077caf9d8015f2e88165e3d3e53)
+        ;
+
+        
+    
+    
+        var popup_7eceace0cd4b06a3662d7567f833d281 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8747acce27c202f36c1fb778ee064d40 = $(`<div id="html_8747acce27c202f36c1fb778ee064d40" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Аденостилес Ромболистный', 'Аир Обыкновенный', 'Алтей Лекарственный', 'Амми Большая', 'Амми Зубная', 'Аралия Высокая', 'Арника Горная', 'Арника Шамиссо', 'Арония Черноплодная', 'Астрагал Шерстистоцветковый', 'Багульник Болотный', 'Бадан Толстолистный', 'Баранец Обыкновенный', 'Барбарис Обыкновенный', 'Барвинок Малый', 'Бархат Амурский', 'Бедренец Камнеломка', 'Безвременник Великолепный', 'Белена Черная', 'Белокопытник Гибридный', 'Бессмертник Песчаный', 'Борец Северный', 'Боярышник Кроваво-Красный', 'Брусника Обыкновенная', 'Бузина Черная', 'Валериана Лекарственная', 'Василек Посевной', 'Вахта Трехлистная', 'Вербена Лекарственная', 'Вздутоплодник Сибирский', 'Виноград Культурный', 'Водосбор Обыкновенный', 'Володушка Золотистая', 'Гармала Обыкновенная', 'Горец Змеиный', 'Горец Перечный', 'Горец Почечуйный', 'Горец Птичий', 'Горицвет Весенний', 'Горчица Сарептская', 'Грыжник Гладкий', 'Девясил Высокий', 'Десмодиум Канадский', 'Диоскорея Ниппонская', 'Донник Лекарственный', 'Дуб Обыкновенный', 'Дурман Обыкновенный', 'Дурнишник Обыкновенный', 'Ель Обыкновенная', 'Желтушник Раскидистый', 'Женьшень', 'Жостер Слабительный', 'Заманиха Высокая', 'Зверобой Продырявленный', 'Земляника Лесная', 'Змееголовник Молдавский', 'Золотарник Канадский', 'Золототысячник Обыкновенный', 'Зюзник Европейский', 'Истод Тонколистный', 'Калина Обыкновенная', 'Копеечник Альпийский', 'Копытень Европейский', 'Кориандр Посевной', 'Коровяк Густоцветковый', 'Крапива Двудомная', 'Красавка Обыкновенная', 'Кровохлёбка Лекарственная', 'Крушина Ольховидная', 'Кубышка Жёлтая', 'Кукуруза Обыкновенная', 'Лабазник Вязолистный', 'Лабазник Обыкновенный', 'Ламинария Японская', 'Ландыш Майский', 'Лапчатка Прямостоячая', 'Лапчатка Серебристая', 'Лён Посевой', 'Леспедеца Копеечниковая', 'Лимонник Китайский', 'Липа Сердцевидная', 'Ломонос Виноградолистный', 'Магнолия Крупноцветковая', 'Маклея Сердцевидная', 'Малина Обыкновенная', 'Марена Красильная', 'Мать-И-Мачеха Обыкновенная', 'Мачок Жёлтый', 'Мелисса Лекарственная', 'Можжевельник Обыкновенный', 'Мята Перечная', 'Наперстянка Крупноцветковая', 'Ноготки Лекарственные', 'Облепиха Крушиновидная', 'Одуванчик Изогнутый', 'Окопник Жёсткий', 'Ольха Чёрная', 'Омела Белая', 'Очиток Большой', 'Паслен Сладко-Горький', 'Пастушья Сумка Обыкновенная', 'Переступень Белый', 'Перец Однолетний', 'Пижма Обыкновенная', 'Пион Уклоняющийся', 'Пиретрум Цинерариелистный', 'Плаун Булавовидный', 'Подорожник Большой', 'Подофилл Щитовидный', 'Полынь Горькая', 'Полынь Обыкновенная', 'Прутняк Обыкновенный', 'Пустырник Сердечный', 'Расторопша Пятнистая', 'Ревень Пальчатый Тангутский', 'Репешок Волосистый', 'Родиола Розовая', 'Ромашка Аптечная', 'Ромашка Безъязычковая', 'Рябина Обыкновенная', 'Сабельник Болотный', 'Свободноягодник Колючий', 'Секуринега Полукустарниковая', 'Синюха Голубая', 'Скополия Карниолийская', 'Скумпия Кожевенная', 'Смоковница Обыкновенная', 'Смородина Черная', 'Сушеница Топяная', 'Термопсис Ланцетовидный', 'Тимьян Ползучий', 'Тмин Обыкновенный', 'Толокнянка Обыкновенная', 'Тыква Обыкновенная', 'Тысячелистник Обыкновенный', 'Фенхель Обыкновенный', 'Фиалка Трёхцветная', 'Хвощ Полевой', 'Хмель Обыкновенный', 'Цикорий Обыкновенный', 'Чага (Берёзовый Гриб, Трутовик Скошенный)', 'Чемерица Лобеля', 'Череда Трёхраздельная', 'Черёмуха Обыкновенная', 'Черника Обыкновенная', 'Чистотел Большой', 'Шиповник Майский', 'Шлемник Байкальский', 'Щавель Конский', 'Щитовник Мужской', 'Эвкоммия Вязолистная', 'Эфедра Хвощевая', 'Эхинацея Пурпурная', 'Якорцы Стелющиеся']<br>             <b>Region:</b> Северная Осетия-Алания         </div>         </div>`)[0];
+                popup_7eceace0cd4b06a3662d7567f833d281.setContent(html_8747acce27c202f36c1fb778ee064d40);
+            
+        
+
+        marker_4bfb9794bd5c607970b3a0d5c8c8a757.bindPopup(popup_7eceace0cd4b06a3662d7567f833d281)
+        ;
+
+        
+    
+    
+            var marker_85e3b5a0eb959f0c37e28672a72a9995 = L.marker(
+                [42.972759, 47.493599],
+                {}
+            ).addTo(map_70cc7b3e43d63d0ff821e583753b223d);
+        
+    
+        var popup_70b107ebae172656f098500c6191fa78 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a1c54dbc286e4fe94cc8c029e8803f8 = $(`<div id="html_1a1c54dbc286e4fe94cc8c029e8803f8" style="width: 100.0%; height: 100.0%;">Дагестан</div>`)[0];
+                popup_70b107ebae172656f098500c6191fa78.setContent(html_1a1c54dbc286e4fe94cc8c029e8803f8);
+            
+        
+
+        marker_85e3b5a0eb959f0c37e28672a72a9995.bindPopup(popup_70b107ebae172656f098500c6191fa78)
+        ;
+
+        
+    
+    
+        var popup_696131ec1a5ec655caf76c1e785e6094 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0d64c03701d372491870a6a67aa0f5b4 = $(`<div id="html_0d64c03701d372491870a6a67aa0f5b4" style="width: 100.0%; height: 100.0%;">         <div style="background-color: #F9F9F9;                     border: 1px solid #CCCCCC;                     border-radius: 5px;                     padding: 10px;                     font-family: Arial, sans-serif;                     font-size: 14px;                     color: #333333;                     max-width: 250px;">             <b>Plant:</b> ['Барбарис Обыкновенный', 'Безвременник Великолепный', 'Белокопытник Гибридный', 'Бессмертник Песчаный', 'Виноград Культурный', 'Дуб Обыкновенный', 'Зюзник Европейский', 'Ломонос Виноградолистный', 'Марена Красильная', 'Окопник Жёсткий', 'Фенхель Обыкновенный', 'Чемерица Лобеля', 'Эфедра Хвощевая']<br>             <b>Region:</b> Дагестан         </div>         </div>`)[0];
+                popup_696131ec1a5ec655caf76c1e785e6094.setContent(html_0d64c03701d372491870a6a67aa0f5b4);
+            
+        
+
+        marker_85e3b5a0eb959f0c37e28672a72a9995.bindPopup(popup_696131ec1a5ec655caf76c1e785e6094)
+        ;
+
+        
+    
+</script>
+</html>
